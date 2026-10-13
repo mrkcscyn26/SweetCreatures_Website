@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cakes — Sweet Creatures</title>
+    <meta name="description" content="Custom cakes made to order for birthdays, weddings, baby showers, and celebrations. View designs and ordering steps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Sweet Creatures</a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="custom-cakes.html" class="active" aria-current="page">Custom Cakes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <div class="page-banner">
+                    <h1>Custom Cakes</h1>
+                    <p>Made to order for any occasion</p>
+                </div>
+
+                <h2 class="section-title">Custom Cake Overview</h2>
+                <div class="grid grid-2">
+                    <div class="story-text">
+                        <p>Tell us the occasion, the colours, the flavours, and the creature your kid won't stop talking about — we'll design a cake around it.</p>
+                        <p>Every order is quoted individually by size and detail, and you approve the design before we bake a thing.</p>
+                    </div>
+                    <div class="frame frame-lg" aria-hidden="true"><span>Feature cake photo</span></div>
+                </div>
+
+                <h2 class="section-title">Design Gallery Overview</h2>
+                <div class="grid grid-4">
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Dinosaur birthday</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Two-tier wedding</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Baby shower elephants</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Corporate logo cake</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Rainbow cupcakes</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Floral semi-naked</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Number cake</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Unicorn cake</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Chocolate ganache tier</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Anniversary hearts</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Character bust</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
+                        <figcaption>Holiday yule log</figcaption>
+                    </figure>
+                </div>
+
+                <h2 class="section-title">How to Order</h2>
+                <div class="grid grid-3">
+                    <article class="card step-card">
+                        <div class="step-number">1</div>
+                        <h3>Tell us about it</h3>
+                        <p>Occasion, size, flavours</p>
+                    </article>
+                    <article class="card step-card">
+                        <div class="step-number">2</div>
+                        <h3>We design it</h3>
+                        <p>You approve the details</p>
+                    </article>
+                    <article class="card step-card">
+                        <div class="step-number">3</div>
+                        <h3>Pick it up</h3>
+                        <p>Fresh on the day</p>
+                    </article>
+                </div>
+                <div class="cta-bar">
+                    <p>Ready to start planning your cake?</p>
+                    <a class="cta-link" href="#request" id="startLink">Message us here &rarr;</a>
+                </div>
+
+                <h2 class="section-title" id="request">Cake Request Form</h2>
+                <div class="form-card">
+                    <form class="contact-form" id="cakeForm" novalidate>
+                        <div class="form-header">
+                            <h3>Request a custom cake or quotation</h3>
+                            <p class="form-note">Fill this out and we will reply with a quote and the next steps.</p>
+                        </div>
+                        <div class="fields-grid">
+                            <div class="field">
+                                <label for="cName">Full name</label>
+                                <input id="cName" type="text" name="name" autocomplete="name" placeholder="Your name" required>
+                                <span class="error-message">Please enter your name.</span>
+                            </div>
+                            <div class="field">
+                                <label for="cEmail">Email</label>
+                                <input id="cEmail" type="email" name="email" autocomplete="email" placeholder="you@email.com" required>
+                                <span class="error-message">Please enter a valid email.</span>
+                            </div>
+                            <div class="field">
+                                <label for="cPhone">Contact number</label>
+                                <input id="cPhone" type="tel" name="phone" autocomplete="tel" placeholder="09XX XXX XXXX" required>
+                                <span class="error-message">Please enter your contact number.</span>
+                            </div>
+                            <div class="field">
+                                <label for="cType">Request type</label>
+                                <select id="cType" name="type">
+                                    <option>Quotation</option>
+                                    <option>Reservation</option>
+                                    <option>Customization</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="cOcc">Occasion</label>
+                                <select id="cOcc" name="occasion">
+                                    <option>Birthday</option>
+                                    <option>Wedding</option>
+                                    <option>Baby shower</option>
+                                    <option>Corporate</option>
+                                    <option>Anniversary</option>
+                                    <option>Holiday</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="cSize">Cake size</label>
+                                <select id="cSize" name="size">
+                                    <option>Small (6 inch)</option>
+                                    <option>Medium (8 inch)</option>
+                                    <option>Large (10 inch)</option>
+                                    <option>Tiered</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="cFlavor">Flavor</label>
+                                <input id="cFlavor" type="text" name="flavor" placeholder="Chocolate, ube, vanilla...">
+                            </div>
+                            <div class="field">
+                                <label for="cDate">Pickup date</label>
+                                <input id="cDate" type="date" name="date" required>
+                                <span class="error-message">Please choose a pickup date.</span>
+                            </div>
+                            <div class="field field-full">
+                                <label for="cPhoto">Reference photo (optional)</label>
+                                <input id="cPhoto" type="file" name="photo" accept="image/*">
+                            </div>
+                            <div class="field field-full">
+                                <label for="cNotes">Design ideas and notes</label>
+                                <textarea id="cNotes" name="notes" rows="4" placeholder="Theme, colors, message on the cake, allergies..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Request</button>
+                        <div class="form-status-msg" id="cakeMsg" role="status">Request sent! We will contact you within 24 hours with your quote.</div>
+                    </form>
+                </div>
+
+                <h2 class="section-title">Occasions We Cater To</h2>
+                <div class="grid grid-3">
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Birthdays</h3>
+                        <p>Kids &amp; adults</p>
+                    </article>
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Weddings</h3>
+                        <p>Tiers &amp; dessert tables</p>
+                    </article>
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Baby Showers</h3>
+                        <p>Themed designs</p>
+                    </article>
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Corporate</h3>
+                        <p>Logos &amp; bulk orders</p>
+                    </article>
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Anniversaries</h3>
+                        <p>Custom toppers</p>
+                    </article>
+                    <article class="card occasion-card">
+                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                        <h3>Holidays</h3>
+                        <p>Seasonal specials</p>
+                    </article>
+                </div>
+
+                <h2 class="section-title">Cancellation &amp; Refund Policy</h2>
+                <div class="policy-card">
+                    <div class="policy-item">
+                        <h4>Cancellations</h4>
+                        <p>Free up to 7 days before your pickup date.</p>
+                    </div>
+                    <div class="policy-item">
+                        <h4>Refunds</h4>
+                        <p>Issued for cancellations made within that window.</p>
+                    </div>
+                    <div class="policy-item">
+                        <h4>Changes to an Order</h4>
+                        <p>Accepted up to 48 hours before pickup.</p>
+                    </div>
+                    <div class="policy-item">
+                        <h4>Non-refundable Deposits</h4>
+                        <p>A 30% deposit holds your date.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="social-nav" aria-label="Social media">
+                <a href="contact.html" aria-label="Sweet Creatures on Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="contact.html" aria-label="Sweet Creatures on Facebook">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z"/></svg>
+                </a>
+                <a href="contact.html" aria-label="Sweet Creatures on TikTok">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1"/><path d="M14 4c.4 2.1 1.9 3.6 4 3.9"/></svg>
+                </a>
+            </nav>
+            <p class="copyright">&copy; 2026 Sweet Creatures &middot; All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll to form
+        (function() {
+            var startLink = document.getElementById('startLink');
+            if (startLink) {
+                startLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.getElementById('request');
+                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        })();
+
+        // Form validation
+        (function() {
+            var notEmpty = function(v) { return v.length > 0; };
+            var isEmail = function(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); };
+
+            function handleForm(formId, msgId, rules) {
+                var form = document.getElementById(formId);
+                if (!form) return;
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var ok = true;
+                    rules.forEach(function(rule) {
+                        var el = document.getElementById(rule[0]);
+                        var good = rule[1](el.value.trim());
+                        el.closest('.field').classList.toggle('error', !good);
+                        if (!good) ok = false;
+                    });
+                    var msg = document.getElementById(msgId);
+                    if (msg) msg.style.display = ok ? 'block' : 'none';
+                    if (ok) form.reset();
+                });
+            }
+
+            handleForm('cakeForm', 'cakeMsg', [
+                ['cName', notEmpty],
+                ['cEmail', isEmail],
+                ['cPhone', notEmpty],
+                ['cDate', notEmpty]
+            ]);
+        })();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Sweet Creatures</title>
+    <meta name="description" content="Explore our menu of fresh cakes, drinks, cupcakes, cookies, fries, and handmade pasta.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Sweet Creatures</a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+                    <li><a href="custom-cakes.html">Custom Cakes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <div class="page-banner">
+                    <h1>Menu</h1>
+                    <p>Everything in the display case</p>
+                </div>
+
+                <!-- Menu Filters & Search -->
+                <div class="filters" id="filters" role="group" aria-label="Filter menu">
+                    <button type="button" class="chip active" data-filter="all">All</button>
+                    <button type="button" class="chip" data-filter="cakes">Cakes</button>
+                    <button type="button" class="chip" data-filter="drinks">Drinks</button>
+                    <button type="button" class="chip" data-filter="cupcakes">Cupcakes &amp; Cookies</button>
+                    <button type="button" class="chip" data-filter="fries">Fries &amp; Nachos</button>
+                    <button type="button" class="chip" data-filter="pasta">Pasta</button>
+                    <div class="search-wrapper">
+                        <input class="search-input" id="search" type="search" placeholder="Search the menu..." aria-label="Search the menu">
+                    </div>
+                </div>
+
+                <div class="empty-state" id="empty" style="display:none;">
+                    <p>No items match your search. Try another keyword or choose <strong>All</strong>.</p>
+                </div>
+
+                <div class="menu-section" data-cat="cakes">
+                    <h2 class="section-title">Cakes</h2>
+                    <div class="menu-rows">
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Classic Chocolate Cake</h4>
+                                <p>Dark cocoa sponge, whipped ganache, chocolate shavings.</p>
+                            </div>
+                            <p class="menu-price">$6.50</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Strawberry Cream Cake</h4>
+                                <p>Vanilla sponge, fresh strawberries, hand-whipped cream.</p>
+                            </div>
+                            <p class="menu-price">$7.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Basque Cheesecake</h4>
+                                <p>Burnt caramelised top, dense creamy centre.</p>
+                            </div>
+                            <p class="menu-price">$6.00</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-cat="drinks">
+                    <h2 class="section-title">Drinks</h2>
+                    <div class="menu-rows">
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Iced Latte</h4>
+                                <p>Double shot, milk over ice.</p>
+                            </div>
+                            <p class="menu-price">$4.50</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Strawberry Milkshake</h4>
+                                <p>House-made syrup, whipped cream, a cookie on the rim.</p>
+                            </div>
+                            <p class="menu-price">$6.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Hot Chocolate</h4>
+                                <p>Melted couverture, marshmallows, cocoa dust.</p>
+                            </div>
+                            <p class="menu-price">$4.00</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-cat="cupcakes">
+                    <h2 class="section-title">Cupcakes &amp; Cookies</h2>
+                    <div class="menu-rows">
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Vanilla Cupcake</h4>
+                                <p>Buttercream swirl, rainbow sprinkles.</p>
+                            </div>
+                            <p class="menu-price">$3.75</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Red Velvet Cupcake</h4>
+                                <p>Cocoa buttermilk sponge, cream cheese frosting.</p>
+                            </div>
+                            <p class="menu-price">$4.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Brown Butter Cookie</h4>
+                                <p>Crisp edges, chewy centre, sea salt finish.</p>
+                            </div>
+                            <p class="menu-price">$2.50</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-cat="fries">
+                    <h2 class="section-title">Fries &amp; Nachos</h2>
+                    <div class="menu-rows">
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Sea Salt Fries</h4>
+                                <p>Triple-cooked, garlic aioli on the side.</p>
+                            </div>
+                            <p class="menu-price">$5.50</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Loaded Fries</h4>
+                                <p>Melted cheese, caramelised onion, herbs.</p>
+                            </div>
+                            <p class="menu-price">$8.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Nachos</h4>
+                                <p>House salsa, sour cream, pickled jalapeño.</p>
+                            </div>
+                            <p class="menu-price">$9.00</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="menu-section" data-cat="pasta">
+                    <h2 class="section-title">Pasta</h2>
+                    <div class="menu-rows">
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Creamy Mushroom Pasta</h4>
+                                <p>Fettuccine, wild mushrooms, parmesan, thyme.</p>
+                            </div>
+                            <p class="menu-price">$14.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Tomato Basil Penne</h4>
+                                <p>Slow-cooked tomato sauce, torn basil, olive oil.</p>
+                            </div>
+                            <p class="menu-price">$13.00</p>
+                        </article>
+                        <article class="menu-row">
+                            <div class="frame frame-thumb" aria-hidden="true"><span>Img</span></div>
+                            <div class="menu-info">
+                                <h4>Truffle Mac &amp; Cheese</h4>
+                                <p>Three cheeses, baked crust, truffle oil.</p>
+                            </div>
+                            <p class="menu-price">$15.00</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="cta-bar">
+                    <p>Looking for a custom cake for an upcoming celebration?</p>
+                    <a class="cta-link" href="custom-cakes.html">Order Custom Cakes &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="social-nav" aria-label="Social media">
+                <a href="contact.html" aria-label="Sweet Creatures on Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="contact.html" aria-label="Sweet Creatures on Facebook">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z"/></svg>
+                </a>
+                <a href="contact.html" aria-label="Sweet Creatures on TikTok">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1"/><path d="M14 4c.4 2.1 1.9 3.6 4 3.9"/></svg>
+                </a>
+            </nav>
+            <p class="copyright">&copy; 2026 Sweet Creatures &middot; All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            let activeFilter = 'all';
+            const chips = document.querySelectorAll('.chip');
+            const search = document.getElementById('search');
+            const sections = document.querySelectorAll('.menu-section');
+            const empty = document.getElementById('empty');
+
+            function applyMenu() {
+                const q = search ? search.value.trim().toLowerCase() : '';
+                let totalVisible = 0;
+
+                sections.forEach(sec => {
+                    const cat = sec.dataset.cat;
+                    const catMatch = (activeFilter === 'all' || cat === activeFilter);
+                    let secVisibleItems = 0;
+
+                    sec.querySelectorAll('.menu-row').forEach(row => {
+                        const text = row.textContent.toLowerCase();
+                        const match = !q || text.includes(q);
+                        if (match) {
+                            row.classList.remove('hide');
+                            secVisibleItems++;
+                        } else {
+                            row.classList.add('hide');
+                        }
+                    });
+
+                    const showSection = catMatch && secVisibleItems > 0;
+                    if (showSection) {
+                        sec.classList.remove('hide');
+                        totalVisible += secVisibleItems;
+                    } else {
+                        sec.classList.add('hide');
+                    }
+                });
+
+                if (empty) {
+                    empty.style.display = totalVisible === 0 ? 'block' : 'none';
+                }
+            }
+
+            chips.forEach(c => {
+                c.addEventListener('click', () => {
+                    chips.forEach(x => x.classList.remove('active'));
+                    c.classList.add('active');
+                    activeFilter = c.dataset.filter;
+                    applyMenu();
+                });
+            });
+
+            if (search) {
+                search.addEventListener('input', applyMenu);
+            }
+        })();
+    </script>
+</body>
+</html>
+
