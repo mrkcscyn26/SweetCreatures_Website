@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Creatures — Bakery &amp; Custom Cakes</title>
     <meta name="description" content="Sweet Creatures — cakes, cupcakes, cookies and custom cakes made to order. See the menu, gallery, and come say hello.">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
         <div class="header-inner">
-            <a class="logo" href="index.html" aria-label="Sweet Creatures home">
-                <img src="assets/images/favicon/favicon.png" alt="Sweet Creatures">
-            </a>
+            <a class="logo" href="index.html">Sweet Creatures</a>
 
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
@@ -42,27 +39,13 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <div class="hero">
-                    <div class="hero-slides" aria-hidden="true">
-                        <img src="assets/images/index/main_image_1.jpg" alt="">
-                        <img src="assets/images/index/main_image_2.jpg" alt="">
-                        <img src="assets/images/index/main_image_3.jpg" alt="">
-                        <img src="assets/images/index/main_image_4.jpg" alt="">
+                    <p class="eyebrow">Bakery &amp; Custom Cakes</p>
+                    <h1>Sweet Creatures</h1>
+                    <p class="tagline">Cakes, cupcakes, cookies &amp; more — baked fresh daily, and made to order for any occasion.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="custom-cakes.html">Order a Cake</a>
+                        <a class="btn btn-ghost" href="menu.html">See the Menu</a>
                     </div>
-                    <div class="hero-content">
-                        <p class="eyebrow">Bakery &amp; Custom Cakes</p>
-                        <h1>Sweet Creatures</h1>
-                        <p class="tagline">Cakes, cupcakes, cookies &amp; more — baked fresh daily, and made to order for any occasion.</p>
-                        <div class="hero-actions">
-                            <a class="btn btn-primary" href="custom-cakes.html">Order a Cake</a>
-                            <a class="btn btn-ghost" href="menu.html">See the Menu</a>
-                        </div>
-                    </div>
-                    <button class="hero-arrow hero-previous" type="button" aria-label="Show previous bakery photo">
-                        <span aria-hidden="true">&larr;</span>
-                    </button>
-                    <button class="hero-arrow hero-next" type="button" aria-label="Show next bakery photo">
-                        <span aria-hidden="true">&rarr;</span>
-                    </button>
                 </div>
             </div>
         </section>
@@ -135,56 +118,5 @@
             <p class="copyright">&copy; 2026 Sweet Creatures &middot; All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        const hero = document.querySelector(".hero");
-        const slides = hero.querySelector(".hero-slides");
-        const previousButton = hero.querySelector(".hero-previous");
-        const nextButton = hero.querySelector(".hero-next");
-        const originalSlides = Array.from(slides.children);
-        const slideCount = originalSlides.length;
-        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        let currentSlide = 1;
-
-        slides.prepend(originalSlides[slideCount - 1].cloneNode(true));
-        slides.append(originalSlides[0].cloneNode(true));
-
-        function moveToSlide(index) {
-            currentSlide = index;
-            slides.style.transform = `translateX(-${currentSlide * slides.clientWidth}px)`;
-        }
-
-        function resetClonedSlide(index) {
-            slides.style.transition = "none";
-            moveToSlide(index);
-            slides.offsetHeight;
-            slides.style.transition = "";
-        }
-
-        function changeSlide(direction) {
-            const nextIndex = currentSlide + direction;
-
-            if (reducedMotion && (nextIndex === 0 || nextIndex === slideCount + 1)) {
-                resetClonedSlide(nextIndex === 0 ? slideCount : 1);
-                return;
-            }
-
-            moveToSlide(nextIndex);
-        }
-
-        previousButton.addEventListener("click", () => changeSlide(-1));
-        nextButton.addEventListener("click", () => changeSlide(1));
-
-        slides.addEventListener("transitionend", (event) => {
-            if (event.target !== slides) return;
-
-            if (currentSlide === 0) resetClonedSlide(slideCount);
-            if (currentSlide === slideCount + 1) resetClonedSlide(1);
-        });
-
-        moveToSlide(currentSlide);
-        window.addEventListener("resize", () => moveToSlide(currentSlide));
-
-        if (!reducedMotion) window.setInterval(() => changeSlide(1), 3000);
-    </script>
 </body>
 </html>

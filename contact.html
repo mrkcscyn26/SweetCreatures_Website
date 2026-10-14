@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us — Sweet Creatures</title>
     <meta name="description" content="Get in touch with Sweet Creatures. Find our opening hours, location, and send us a message.">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
         <div class="header-inner">
-            <a class="logo" href="index.html" aria-label="Sweet Creatures home">
-                <img src="assets/images/logo/logo.png" alt="Sweet Creatures">
-            </a>
+            <a class="logo" href="index.html">Sweet Creatures</a>
+
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
                 <span></span><span></span><span></span>
@@ -47,51 +45,45 @@
                 <h2 class="section-title">Find Us</h2>
                 <div class="grid grid-2">
                     <ul class="info-list">
-                        <li>Puregas Pampano st, Longos, Malabon, Philippines, 1472</li>
+                        <li>[ Street address, City, Postcode ]</li>
                         <li>Open Daily 12pm &ndash; 11pm</li>
-                        <li>sweetcreatures2020@gmail.com</li>
+                        <li>[ Email address ]</li>
                         <li>Instagram &middot; Facebook &middot; TikTok</li>
                     </ul>
-                    <div class="frame frame-lg">
-                        <iframe
-                            class="contact-map"
-                            src="https://www.google.com/maps?q=14.6523816,120.9605402&output=embed"
-                            title="Map to Sweet Creatures in Malabon"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                    <div class="frame frame-lg" aria-hidden="true"><span>Embedded map</span></div>
                 </div>
 
                 <h2 class="section-title">Send a Message</h2>
-                <form class="contact-form" id="contactForm" novalidate>
-                    <div class="field">
-                        <label for="mName">Name</label>
-                        <input type="text" id="mName" name="name" autocomplete="name" placeholder="Name" required>
-                        <span class="error-message">Please enter your name.</span>
-                    </div>
-                    <div class="field">
-                        <label for="mEmail">Email</label>
-                        <input type="email" id="mEmail" name="email" autocomplete="email" placeholder="Email" required>
-                        <span class="error-message">Please enter a valid email.</span>
-                    </div>
-                    <div class="field">
-                        <label for="mSubject">Subject</label>
-                        <select id="mSubject" name="subject">
-                            <option>General Inquiry</option>
-                            <option>Order Concern</option>
-                            <option>Feedback</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="mMsg">Message</label>
-                        <textarea id="mMsg" name="message" rows="5" placeholder="Message" required></textarea>
-                        <span class="error-message">Please write a message.</span>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <div class="form-status-msg" id="contactMsg" role="status">Message sent. Thanks for reaching out!</div>
-                </form>
+                <div class="grid grid-2">
+                    <div class="frame frame-lg" aria-hidden="true"><span>Photo of the storefront</span></div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="field">
+                            <label for="mName">Name</label>
+                            <input type="text" id="mName" name="name" autocomplete="name" placeholder="Name" required>
+                            <span class="error-message">Please enter your name.</span>
+                        </div>
+                        <div class="field">
+                            <label for="mEmail">Email</label>
+                            <input type="email" id="mEmail" name="email" autocomplete="email" placeholder="Email" required>
+                            <span class="error-message">Please enter a valid email.</span>
+                        </div>
+                        <div class="field">
+                            <label for="mSubject">Subject</label>
+                            <select id="mSubject" name="subject">
+                                <option>General Inquiry</option>
+                                <option>Order Concern</option>
+                                <option>Feedback</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="mMsg">Message</label>
+                            <textarea id="mMsg" name="message" rows="5" placeholder="Message" required></textarea>
+                            <span class="error-message">Please write a message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-status-msg" id="contactMsg" role="status">Message sent. Thanks for reaching out!</div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -144,3 +136,4 @@
     </script>
 </body>
 </html>
+
