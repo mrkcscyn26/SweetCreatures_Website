@@ -30,8 +30,7 @@ SweetCreatures_Website/
   custom-cakes.html
   gallery.html
   contact.html
-  css/
-    style.css
+  style.css
   assets/
     images/
       logo/
