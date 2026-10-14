@@ -1,4 +1,4 @@
-# Sweet Creatures Website
+# SweetCreatures_Website
 
 A website for **Sweet Creatures**, a pastry and coffee shop offering handcrafted cakes, cupcakes, pastries, pasta, snacks, and specialty beverages. This repository contains the Phase 1 web development scaffold.
 
