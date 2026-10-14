@@ -1,7 +1,7 @@
 /* ============================================================
    Sweet Creatures - style.css
    Fonts: Fredoka (display) / Nunito (body) - Google Fonts
-   
+
    Color Palette Specification:
    - Sage green:   #9CA764 - accents, avatars
    - Dirty White:  #E7DAA6 - disabled, dividers
@@ -26,7 +26,7 @@
     --bg: var(--cream-white);
     --surface: #ffffff;
     --surface-tint: #FAF6E8;
-    
+
     --primary: var(--sage-deep);
     --primary-hover: #4B572F;
     --primary-ink: var(--espresso);
@@ -37,7 +37,7 @@
 
     --line: var(--dirty-white);
     --line-strong: #D5C68D;
-    
+
     --disabled: var(--dirty-white);
     --disabled-fg: #8C7F60;
 
@@ -386,15 +386,6 @@ ul {
     font-size: 17px;
 }
 
-.section-featured {
-    padding-top: 36px;
-}
-
-.section-featured .section-title:first-of-type {
-    margin-top: 0;
-}
-
-
 /* ---------- Page banners ---------- */
 
 .page-banner {
@@ -497,6 +488,8 @@ ul {
     border-radius: 50%;
     border-style: solid;
     background: rgba(156, 167, 100, 0.22);
+    border-color: var(--secondary);
+    color: #4B572F;
 }
 .frame-lg { height: 230px; align-self: stretch; }
 .frame-gallery { height: 130px; }
@@ -578,7 +571,6 @@ ul {
 }
 
 /* ---------- Menu rows ---------- */
-
 
 .menu-rows {
     display: flex;
@@ -669,6 +661,8 @@ ul {
 .step-card:nth-child(2) .step-number {
     background: var(--caramel);
 }
+
+/* ---------- CTA ---------- */
 
 .cta-bar {
     display: flex;
@@ -840,7 +834,6 @@ ul {
     cursor: not-allowed;
 }
 
-/* Rust: Errors & Overdue states */
 .field.error input,
 .field.error textarea,
 .field.error select,

@@ -7,8 +7,9 @@
     <meta name="description" content="Custom cakes made to order for birthdays, weddings, baby showers, and celebrations. View designs and ordering steps.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-cakes.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -35,11 +36,14 @@
     </header>
 
     <main id="main">
-        <section class="section">
+        <section class="section pc-page">
             <div class="container">
-                <div class="page-banner">
-                    <h1>Custom Cakes</h1>
-                    <p>Made to order for any occasion</p>
+                <div class="pc-bezel pc-banner-bezel">
+                    <div class="page-banner pc-banner">
+                        <span class="eyebrow">Designed Around You</span>
+                        <h1>Custom Cakes</h1>
+                        <p>Made to order for any occasion</p>
+                    </div>
                 </div>
 
                 <h2 class="section-title">Custom Cake Overview</h2>
@@ -48,87 +52,95 @@
                         <p>Tell us the occasion, the colours, the flavours, and the creature your kid won't stop talking about — we'll design a cake around it.</p>
                         <p>Every order is quoted individually by size and detail, and you approve the design before we bake a thing.</p>
                     </div>
-                    <div class="frame frame-lg" aria-hidden="true"><span>Feature cake photo</span></div>
+                    <div class="pc-bezel pc-bezel-soft">
+                        <div class="frame frame-lg" aria-hidden="true"><span>Feature cake photo</span></div>
+                    </div>
                 </div>
 
                 <h2 class="section-title">Design Gallery Overview</h2>
-                <div class="grid grid-4">
-                    <figure class="gallery-item">
+                <div class="grid grid-4 pc-gallery">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Dinosaur birthday</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Two-tier wedding</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Baby shower elephants</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Corporate logo cake</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Rainbow cupcakes</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Floral semi-naked</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Number cake</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Unicorn cake</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Chocolate ganache tier</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Anniversary hearts</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Character bust</figcaption>
                     </figure>
-                    <figure class="gallery-item">
+                    <figure class="gallery-item" data-reveal>
                         <div class="frame frame-gallery" aria-hidden="true"><span>Img</span></div>
                         <figcaption>Holiday yule log</figcaption>
                     </figure>
                 </div>
 
                 <h2 class="section-title">How to Order</h2>
-                <div class="grid grid-3">
-                    <article class="card step-card">
+                <div class="grid grid-3 pc-steps">
+                    <article class="card step-card pc-step" data-reveal>
                         <div class="step-number">1</div>
                         <h3>Tell us about it</h3>
                         <p>Occasion, size, flavours</p>
                     </article>
-                    <article class="card step-card">
+                    <article class="card step-card" data-reveal>
                         <div class="step-number">2</div>
                         <h3>We design it</h3>
                         <p>You approve the details</p>
                     </article>
-                    <article class="card step-card">
+                    <article class="card step-card" data-reveal>
                         <div class="step-number">3</div>
                         <h3>Pick it up</h3>
                         <p>Fresh on the day</p>
                     </article>
                 </div>
-                <div class="cta-bar">
+                <div class="cta-bar pc-cta-bar">
                     <p>Ready to start planning your cake?</p>
-                    <a class="cta-link" href="#request" id="startLink">Message us here &rarr;</a>
+                    <a class="pc-cta" href="#request" id="startLink">
+                        <span class="pc-cta-label">Message us here</span>
+                        <span class="pc-cta-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"/><path d="M12.5 6l6 6-6 6"/></svg>
+                        </span>
+                    </a>
                 </div>
 
                 <h2 class="section-title" id="request">Cake Request Form</h2>
-                <div class="form-card">
-                    <form class="contact-form" id="cakeForm" novalidate>
+                <div class="pc-bezel pc-bezel-soft">
+                    <div class="form-card pc-form-card">
+                        <form class="contact-form pc-form" id="cakeForm" novalidate>
                         <div class="form-header">
                             <h3>Request a custom cake or quotation</h3>
                             <p class="form-note">Fill this out and we will reply with a quote and the next steps.</p>
@@ -186,9 +198,12 @@
                                 <input id="cDate" type="date" name="date" required>
                                 <span class="error-message">Please choose a pickup date.</span>
                             </div>
-                            <div class="field field-full">
+                            <div class="field field-full field-photo">
                                 <label for="cPhoto">Reference photo (optional)</label>
-                                <input id="cPhoto" type="file" name="photo" accept="image/*">
+                                <div class="file-well">
+                                    <p class="file-prompt">Drop a file or <span>browse</span></p>
+                                    <input id="cPhoto" type="file" name="photo" accept="image/*">
+                                </div>
                             </div>
                             <div class="field field-full">
                                 <label for="cNotes">Design ideas and notes</label>
@@ -197,60 +212,63 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send Request</button>
                         <div class="form-status-msg" id="cakeMsg" role="status">Request sent! We will contact you within 24 hours with your quote.</div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
 
                 <h2 class="section-title">Occasions We Cater To</h2>
                 <div class="grid grid-3">
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Birthdays</h3>
                         <p>Kids &amp; adults</p>
                     </article>
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Weddings</h3>
                         <p>Tiers &amp; dessert tables</p>
                     </article>
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Baby Showers</h3>
                         <p>Themed designs</p>
                     </article>
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Corporate</h3>
                         <p>Logos &amp; bulk orders</p>
                     </article>
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Anniversaries</h3>
                         <p>Custom toppers</p>
                     </article>
-                    <article class="card occasion-card">
-                        <div class="frame frame-icon" aria-hidden="true"><span>Img</span></div>
+                    <article class="card occasion-card pc-occasion" data-reveal>
+                        <div class="pc-icon-ring"><div class="frame frame-icon" aria-hidden="true"><span>Img</span></div></div>
                         <h3>Holidays</h3>
                         <p>Seasonal specials</p>
                     </article>
                 </div>
 
                 <h2 class="section-title">Cancellation &amp; Refund Policy</h2>
-                <div class="policy-card">
-                    <div class="policy-item">
-                        <h4>Cancellations</h4>
-                        <p>Free up to 7 days before your pickup date.</p>
-                    </div>
-                    <div class="policy-item">
-                        <h4>Refunds</h4>
-                        <p>Issued for cancellations made within that window.</p>
-                    </div>
-                    <div class="policy-item">
-                        <h4>Changes to an Order</h4>
-                        <p>Accepted up to 48 hours before pickup.</p>
-                    </div>
-                    <div class="policy-item">
-                        <h4>Non-refundable Deposits</h4>
-                        <p>A 30% deposit holds your date.</p>
+                <div class="pc-bezel pc-bezel-soft">
+                    <div class="policy-card pc-policy-card">
+                        <div class="policy-item">
+                            <h3>Cancellations</h3>
+                            <p>Free up to 7 days before your pickup date.</p>
+                        </div>
+                        <div class="policy-item">
+                            <h3>Refunds</h3>
+                            <p>Issued for cancellations made within that window.</p>
+                        </div>
+                        <div class="policy-item">
+                            <h3>Changes to an Order</h3>
+                            <p>Accepted up to 48 hours before pickup.</p>
+                        </div>
+                        <div class="policy-item">
+                            <h3>Non-refundable Deposits</h3>
+                            <p>A 30% deposit holds your date.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,16 +292,42 @@
         </div>
     </footer>
     <script>
-        // Smooth scroll to form
+        // Pickup date can never be in the past
         (function() {
-            var startLink = document.getElementById('startLink');
-            if (startLink) {
-                startLink.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var target = document.getElementById('request');
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
-                });
+            var cDate = document.getElementById('cDate');
+            if (!cDate) return;
+            var t = new Date();
+            var mm = String(t.getMonth() + 1).padStart(2, '0');
+            var dd = String(t.getDate()).padStart(2, '0');
+            cDate.min = t.getFullYear() + '-' + mm + '-' + dd;
+        })();
+
+        // Reveal grids as they scroll in, staggered per row
+        (function() {
+            var items = document.querySelectorAll('[data-reveal]');
+            if (!items.length) return;
+
+            items.forEach(function(el) {
+                var i = Array.prototype.indexOf.call(el.parentElement.children, el);
+                el.classList.add('reveal');
+                el.style.setProperty('--reveal-d', Math.min(i, 7) * 50 + 'ms');
+            });
+
+            if (!('IntersectionObserver' in window)) {
+                items.forEach(function(el) { el.classList.add('revealed'); });
+                return;
             }
+
+            var io = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '-60px 0px' });
+
+            items.forEach(function(el) { io.observe(el); });
         })();
 
         // Form validation
@@ -294,6 +338,17 @@
             function handleForm(formId, msgId, rules) {
                 var form = document.getElementById(formId);
                 if (!form) return;
+
+                // Errors clear the moment the field becomes valid again
+                rules.forEach(function(rule) {
+                    var el = document.getElementById(rule[0]);
+                    el.addEventListener('input', function() {
+                        if (rule[1](el.value.trim())) {
+                            el.closest('.field').classList.remove('error');
+                        }
+                    });
+                });
+
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
                     var ok = true;
@@ -304,7 +359,7 @@
                         if (!good) ok = false;
                     });
                     var msg = document.getElementById(msgId);
-                    if (msg) msg.style.display = ok ? 'block' : 'none';
+                    if (msg) msg.classList.toggle('show', ok);
                     if (ok) form.reset();
                 });
             }
