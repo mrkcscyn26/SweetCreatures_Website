@@ -144,6 +144,8 @@
         const slideCount = originalSlides.length;
         const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         let currentSlide = 1;
+        let isTransitioning = false;
+        const pendingButtonMoves = [];
 
         slides.prepend(originalSlides[slideCount - 1].cloneNode(true));
         slides.append(originalSlides[0].cloneNode(true));
@@ -160,7 +162,12 @@
             slides.style.transition = "";
         }
 
-        function changeSlide(direction) {
+        function changeSlide(direction, fromButton = false) {
+            if (isTransitioning) {
+                if (fromButton) pendingButtonMoves.push(direction);
+                return;
+            }
+
             const nextIndex = currentSlide + direction;
 
             if (reducedMotion && (nextIndex === 0 || nextIndex === slideCount + 1)) {
@@ -168,23 +175,29 @@
                 return;
             }
 
+            isTransitioning = !reducedMotion;
             moveToSlide(nextIndex);
         }
 
-        previousButton.addEventListener("click", () => changeSlide(-1));
-        nextButton.addEventListener("click", () => changeSlide(1));
+        previousButton.addEventListener("click", () => changeSlide(-1, true));
+        nextButton.addEventListener("click", () => changeSlide(1, true));
 
         slides.addEventListener("transitionend", (event) => {
-            if (event.target !== slides) return;
+            if (event.target !== slides || event.propertyName !== "transform") return;
 
             if (currentSlide === 0) resetClonedSlide(slideCount);
             if (currentSlide === slideCount + 1) resetClonedSlide(1);
+            isTransitioning = false;
+
+            if (pendingButtonMoves.length > 0) {
+                changeSlide(pendingButtonMoves.shift(), true);
+            }
         });
 
         moveToSlide(currentSlide);
         window.addEventListener("resize", () => moveToSlide(currentSlide));
 
-        if (!reducedMotion) window.setInterval(() => changeSlide(1), 3000);
+        window.setInterval(() => changeSlide(1), 3000);
     </script>
 </body>
 </html>
