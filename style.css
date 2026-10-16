@@ -611,6 +611,18 @@ ul {
     height: 90px;
 }
 
+.feature-card .frame-sm {
+    width: 100%;
+    height: 220px;
+}
+
+.feature-card .frame-sm img,
+.feature-card .frame:hover img,
+.feature-card:hover .frame img {
+    object-fit: contain;
+    transform: none;
+}
+
 .frame-thumb {
     height: 80px;
     width: 110px;
