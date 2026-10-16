@@ -804,6 +804,34 @@ ul {
     box-shadow: 0 8px 20px rgba(59, 42, 32, 0.08);
 }
 
+.menu-section {
+    margin-bottom: 26px;
+}
+
+.menu-row .frame-thumb {
+    background: linear-gradient(135deg, rgba(156, 167, 100, 0.12), rgba(233, 214, 164, 0.18));
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-row .frame-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 220ms var(--ease);
+}
+
+.menu-row:hover .frame-thumb img {
+    transform: scale(1.05);
+}
+
+.menu-info {
+    min-width: 0;
+}
+
 .menu-info h4 {
     font-size: 16px;
     color: var(--headings);
@@ -821,6 +849,7 @@ ul {
     font-size: 16px;
     color: var(--caramel);
     text-align: right;
+    letter-spacing: 0.02em;
 }
 
 /* ---------- Gallery ---------- */
