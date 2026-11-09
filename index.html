@@ -1,221 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Creatures — Cafe, Bakery &amp; Bakeshop</title>
-    <meta name="description" content="Sweet Creatures is a cozy cafe and bakeshop in Malabon serving handcrafted cakes, cupcakes, cookies, frappes, iced coffee, and custom celebration cakes for every occasion.">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-        <div class="header-inner">
-            <a class="logo" href="index.html" aria-label="Sweet Creatures home">
-                <img src="assets/images/favicon/favicon.png" alt="Sweet Creatures">
-            </a>
-
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
-                <span></span><span></span><span></span>
-            </label>
-
-            <nav aria-label="Main navigation">
-                <ul class="nav-list">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="custom-cakes.html">Custom Cakes</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main id="main">
-        <!-- ============ HOME ============ -->
-        <section class="hero-section">
-            <div class="container hero-container">
-                <div class="hero">
-                    <div class="hero-slides" aria-hidden="true">
-                        <img src="assets/images/index/main_image_1.jpg" alt="">
-                        <img src="assets/images/index/main_image_2.jpg" alt="">
-                        <img src="assets/images/index/main_image_3.jpg" alt="">
-                        <img src="assets/images/index/main_image_4.jpg" alt="">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Sweet Creatures — Cafe, Bakery & Bakeshop
+        </title>
+        <meta content="Sweet Creatures is a cozy cafe and bakeshop in Malabon serving handcrafted cakes, cupcakes, cookies, frappes, iced coffee, and custom celebration cakes for every occasion." name="description"/>
+        <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header glass">
+            <div class="header-inner">
+                <a aria-label="Sweet Creatures home" class="logo" href="index.html">
+                    <img alt="Sweet Creatures" src="assets/images/favicon/favicon.png"/>
+                </a>
+            </div>
+        </header>
+        <main id="main">
+            <!-- ============ HOME ============ -->
+            <section class="hero-section">
+                <div class="container hero-container">
+                    <div class="hero slider">
+                        <div aria-hidden="true" class="hero-slides">
+                            <img alt="" src="assets/images/index/main_image_1.jpg"/>
+                            <img alt="" src="assets/images/index/main_image_2.jpg"/>
+                            <img alt="" src="assets/images/index/main_image_3.jpg"/>
+                            <img alt="" src="assets/images/index/main_image_4.jpg"/>
+                        </div>
+                        <div class="hero-content">
+                            <p class="eyebrow">
+                                Cafe, Bakery & Bakeshop
+                            </p>
+                            <h1>
+                                Sweet Creatures
+                            </h1>
+                            <p class="tagline">
+                                Sweet treats, iced coffee,cookies & custom cakes for every fan and every celebration.
+                            </p>
+                            <div class="hero-actions">
+                                <a class="btn btn-primary" href="custom-cakes.html">
+                                    Order a Cake
+                                </a>
+                                <a class="btn btn-ghost" href="menu.html">
+                                    See the Menu
+                                </a>
+                            </div>
+                        </div>
+                        <button aria-label="Show previous bakery photo" class="hero-arrow hero-previous" type="button">
+                            <span aria-hidden="true">
+                                ←
+                            </span>
+                        </button>
+                        <button aria-label="Show next bakery photo" class="hero-arrow hero-next" type="button">
+                            <span aria-hidden="true">
+                                →
+                            </span>
+                        </button>
                     </div>
-                    <div class="hero-content">
-                        <p class="eyebrow">Cafe, Bakery &amp; Bakeshop</p>
-                        <h1>Sweet Creatures</h1>
-                        <p class="tagline">Sweet treats, iced coffee,cookies &amp; custom cakes for every fan and every celebration.</p>
-                        <div class="hero-actions">
-                            <a class="btn btn-primary" href="custom-cakes.html">Order a Cake</a>
-                            <a class="btn btn-ghost" href="menu.html">See the Menu</a>
+                </div>
+            </section>
+            <section class="section section-featured">
+                <div class="container">
+                    <h2 class="section-title">
+                        Featured This Week
+                    </h2>
+                    <p class="featured-intro">
+                        A few colorful favorites from our menu, made to brighten your cafe break.
+                    </p>
+                    <div class="grid grid-3 featured-grid">
+                        <article class="card feature-card glass box">
+                            <div class="frame feature-image feature-image-cake">
+                                <img alt="Strawberry Cream Cake topped with fresh strawberries and whipped cream" loading="lazy" src="assets/images/menu/strawberry-cake-ring.png"/>
+                            </div>
+                            <p class="feature-category">
+                                CAKE
+                            </p>
+                            <h3>
+                                Strawberry Cream Cake
+                            </h3>
+                            <p class="feature-description">
+                                Vanilla sponge, fresh strawberries, and hand-whipped cream.
+                            </p>
+                            <p class="price">
+                                ₱400
+                            </p>
+                        </article>
+                        <article class="card feature-card glass box">
+                            <div class="frame feature-image feature-image-matcha">
+                                <img alt="Layered Matcha Tiramisu Drink topped with cream and a biscuit" loading="lazy" src="assets/images/menu/matcha-tiramisu-drink-new.png"/>
+                            </div>
+                            <p class="feature-category">
+                                SIGNATURE DRINK
+                            </p>
+                            <h3>
+                                Matcha Tiramisu Drink
+                            </h3>
+                            <p class="feature-description">
+                                Creamy matcha layers, whipped topping, and a crisp biscuit finish.
+                            </p>
+                            <p class="price">
+                                ₱155
+                            </p>
+                        </article>
+                        <article class="card feature-card glass box">
+                            <div class="frame feature-image">
+                                <img alt="Banana Caramel Crunch Crêpe served with ice cream and caramel drizzle" loading="lazy" src="assets/images/menu/banana-caramel-crunch-crepe-new.png"/>
+                            </div>
+                            <p class="feature-category">
+                                SWEET CRÊPE
+                            </p>
+                            <h3>
+                                Banana Caramel Crunch Crêpe
+                            </h3>
+                            <p class="feature-description">
+                                Banana, cornflake crunch, vanilla ice cream, and salted caramel drizzle.
+                            </p>
+                            <p class="price">
+                                ₱120
+                            </p>
+                        </article>
+                    </div>
+                    <div class="featured-actions">
+                        <a class="btn btn-primary" href="menu.html">
+                            Explore the Full Menu
+                        </a>
+                    </div>
+                    <h2 class="section-title">
+                        What We Make
+                    </h2>
+                    <div class="grid grid-3">
+                        <a class="card link-card glass box" href="menu.html">
+                            <h3>
+                                Full Menu
+                            </h3>
+                            <p>
+                                Frappes, iced coffee, nacho fries, & cakes
+                            </p>
+                        </a>
+                        <a class="card link-card glass box" href="custom-cakes.html">
+                            <h3>
+                                Custom Cakes
+                            </h3>
+                            <p>
+                                Made to order for birthdays & special occasions
+                            </p>
+                        </a>
+                        <a class="card link-card glass box" href="gallery.html">
+                            <h3>
+                                Gallery
+                            </h3>
+                            <p>
+                                Photos of our cakes & our cozy shop
+                            </p>
+                        </a>
+                    </div>
+                    <h2 class="section-title">
+                        Our Shop
+                    </h2>
+                    <div class="grid grid-2">
+                        <div class="story-text glass box">
+                            <p>
+                                Sweet Creatures started in 2020 as a home-based shop during the pandemic. It is named after the Harry Styles song Sweet Creature.
+                            </p>
+                            <p>
+                                Today it is a cafe and bakeshop in Malabon where fans can hang out over frappes, iced coffee, and nacho fries, and where we make custom cakes for your celebrations.
+                            </p>
+                            <div>
+                                <a class="btn btn-ghost" href="about.html">
+                                    Read Our Story →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="frame frame-lg">
+                            <img alt="Sweet Creatures shop exterior and cozy cafe interior" loading="lazy" src="assets/images/index/our_shop.jpg"/>
                         </div>
                     </div>
-                    <button class="hero-arrow hero-previous" type="button" aria-label="Show previous bakery photo">
-                        <span aria-hidden="true">&larr;</span>
-                    </button>
-                    <button class="hero-arrow hero-next" type="button" aria-label="Show next bakery photo">
-                        <span aria-hidden="true">&rarr;</span>
-                    </button>
                 </div>
-            </div>
-        </section>
-
-        <section class="section section-featured">
+            </section>
+        </main>
+        <footer class="site-footer">
             <div class="container">
-                <h2 class="section-title">Featured This Week</h2>
-                <p class="featured-intro">A few colorful favorites from our menu, made to brighten your cafe break.</p>
-                <div class="grid grid-3 featured-grid">
-                    <article class="card feature-card">
-                        <div class="frame feature-image feature-image-cake">
-                            <img src="assets/images/menu/strawberry-cake-ring.png" alt="Strawberry Cream Cake topped with fresh strawberries and whipped cream" loading="lazy">
-                        </div>
-                        <p class="feature-category">CAKE</p>
-                        <h3>Strawberry Cream Cake</h3>
-                        <p class="feature-description">Vanilla sponge, fresh strawberries, and hand-whipped cream.</p>
-                        <p class="price">₱400</p>
-                    </article>
-                    <article class="card feature-card">
-                        <div class="frame feature-image feature-image-matcha">
-                            <img src="assets/images/menu/matcha-tiramisu-drink-new.png" alt="Layered Matcha Tiramisu Drink topped with cream and a biscuit" loading="lazy">
-                        </div>
-                        <p class="feature-category">SIGNATURE DRINK</p>
-                        <h3>Matcha Tiramisu Drink</h3>
-                        <p class="feature-description">Creamy matcha layers, whipped topping, and a crisp biscuit finish.</p>
-                        <p class="price">₱155</p>
-                    </article>
-                    <article class="card feature-card">
-                        <div class="frame feature-image">
-                            <img src="assets/images/menu/banana-caramel-crunch-crepe-new.png" alt="Banana Caramel Crunch Crêpe served with ice cream and caramel drizzle" loading="lazy">
-                        </div>
-                        <p class="feature-category">SWEET CRÊPE</p>
-                        <h3>Banana Caramel Crunch Crêpe</h3>
-                        <p class="feature-description">Banana, cornflake crunch, vanilla ice cream, and salted caramel drizzle.</p>
-                        <p class="price">₱120</p>
-                    </article>
-                </div>
-                <div class="featured-actions">
-                    <a class="btn btn-primary" href="menu.html">Explore the Full Menu</a>
-                </div>
-
-                <h2 class="section-title">What We Make</h2>
-                <div class="grid grid-3">
-                    <a class="card link-card" href="menu.html">
-                        <h3>Full Menu</h3>
-                        <p>Frappes, iced coffee, nacho fries, &amp; cakes</p>
+                <nav aria-label="Social media" class="social-nav">
+                    <a aria-label="Sweet Creatures on Instagram" href="https://www.instagram.com/_sweetcreaturesss/" rel="noopener noreferrer" target="_blank">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                            <rect height="18" rx="5" width="18" x="3" y="3">
+                            </rect>
+                            <circle cx="12" cy="12" r="4">
+                            </circle>
+                            <circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none">
+                            </circle>
+                        </svg>
                     </a>
-                    <a class="card link-card" href="custom-cakes.html">
-                        <h3>Custom Cakes</h3>
-                        <p>Made to order for birthdays &amp; special occasions</p>
+                    <a aria-label="Sweet Creatures on Facebook" href="https://www.facebook.com/sweetcreaturesph" rel="noopener noreferrer" target="_blank">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                            <circle cx="12" cy="12" r="9.5">
+                            </circle>
+                            <path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z">
+                            </path>
+                        </svg>
                     </a>
-                    <a class="card link-card" href="gallery.html">
-                        <h3>Gallery</h3>
-                        <p>Photos of our cakes &amp; our cozy shop</p>
+                    <a aria-label="Sweet Creatures on TikTok" href="https://www.tiktok.com/@sweet.creatures7" rel="noopener noreferrer" target="_blank">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                            <path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1">
+                            </path>
+                            <path d="M14 4c.4 2.1 1.9 3.6 4 3.9">
+                            </path>
+                        </svg>
                     </a>
-                </div>
-
-                <h2 class="section-title">Our Shop</h2>
-                <div class="grid grid-2">
-                    <div class="story-text">
-                        <p>Sweet Creatures started in 2020 as a home-based shop during the pandemic. It is named after the Harry Styles song Sweet Creature.</p>
-                        <p>Today it is a cafe and bakeshop in Malabon where fans can hang out over frappes, iced coffee, and nacho fries, and where we make custom cakes for your celebrations.</p>
-                        <div>
-                            <a class="btn btn-ghost" href="about.html">Read Our Story &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="frame frame-lg">
-                        <img src="assets/images/index/our_shop.jpg" alt="Sweet Creatures shop exterior and cozy cafe interior" loading="lazy">
-                    </div>
-                </div>
+                </nav>
+                <p class="copyright">
+                    © 2026 Sweet Creatures · All rights reserved.
+                </p>
             </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <nav class="social-nav" aria-label="Social media">
-                <a href="https://www.instagram.com/_sweetcreaturesss/" aria-label="Sweet Creatures on Instagram" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                </a>
-                <a href="https://www.facebook.com/sweetcreaturesph" aria-label="Sweet Creatures on Facebook" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z"/></svg>
-                </a>
-                <a href="https://www.tiktok.com/@sweet.creatures7" aria-label="Sweet Creatures on TikTok" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1"/><path d="M14 4c.4 2.1 1.9 3.6 4 3.9"/></svg>
-                </a>
-            </nav>
-            <p class="copyright">&copy; 2026 Sweet Creatures &middot; All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        const hero = document.querySelector(".hero");
-        const slides = hero.querySelector(".hero-slides");
-        const previousButton = hero.querySelector(".hero-previous");
-        const nextButton = hero.querySelector(".hero-next");
-        const originalSlides = Array.from(slides.children);
-        const slideCount = originalSlides.length;
-        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        let currentSlide = 1;
-        let isTransitioning = false;
-        const pendingButtonMoves = [];
-
-        slides.prepend(originalSlides[slideCount - 1].cloneNode(true));
-        slides.append(originalSlides[0].cloneNode(true));
-
-        function moveToSlide(index) {
-            currentSlide = index;
-            slides.style.transform = `translateX(-${currentSlide * slides.clientWidth}px)`;
-        }
-
-        function resetClonedSlide(index) {
-            slides.style.transition = "none";
-            moveToSlide(index);
-            slides.offsetHeight;
-            slides.style.transition = "";
-        }
-
-        function changeSlide(direction, fromButton = false) {
-            if (isTransitioning) {
-                if (fromButton) pendingButtonMoves.push(direction);
-                return;
-            }
-
-            const nextIndex = currentSlide + direction;
-
-            if (reducedMotion && (nextIndex === 0 || nextIndex === slideCount + 1)) {
-                resetClonedSlide(nextIndex === 0 ? slideCount : 1);
-                return;
-            }
-
-            isTransitioning = !reducedMotion;
-            moveToSlide(nextIndex);
-        }
-
-        previousButton.addEventListener("click", () => changeSlide(-1, true));
-        nextButton.addEventListener("click", () => changeSlide(1, true));
-
-        slides.addEventListener("transitionend", (event) => {
-            if (event.target !== slides || event.propertyName !== "transform") return;
-
-            if (currentSlide === 0) resetClonedSlide(slideCount);
-            if (currentSlide === slideCount + 1) resetClonedSlide(1);
-            isTransitioning = false;
-
-            if (pendingButtonMoves.length > 0) {
-                changeSlide(pendingButtonMoves.shift(), true);
-            }
-        });
-
-        moveToSlide(currentSlide);
-        window.addEventListener("resize", () => moveToSlide(currentSlide));
-
-        window.setInterval(() => changeSlide(1), 3000);
-    </script>
-</body>
+        </footer>
+        <nav aria-label="Main navigation" class="bottom-nav glass">
+            <ul class="nav-list">
+                <li>
+                    <a aria-label="Home" href="index.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="m3 10 9-7 9 7v10H3z">
+                            </path>
+                            <path d="M9 20v-7h6v7">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="About Us" href="about.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <circle cx="12" cy="12" r="9">
+                            </circle>
+                            <path d="M12 11v6m0-10v1">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            About Us
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Menu" href="menu.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Menu
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Custom Cakes" href="custom-cakes.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 12h16v8H4zM4 16h16M8 12V8h8v4M12 8V4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Custom Cakes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Gallery" href="gallery.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="18" rx="3" width="18" x="3" y="3">
+                            </rect>
+                            <circle cx="8" cy="8" r="1">
+                            </circle>
+                            <path d="m3 17 6-6 5 5 3-3 4 4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Gallery
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Contact Us" href="contact.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="14" rx="3" width="18" x="3" y="5">
+                            </rect>
+                            <path d="m3 6 9 7 9-7">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Contact Us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
 </html>
