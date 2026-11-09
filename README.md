@@ -31,6 +31,7 @@ SweetCreatures_Website/
   gallery.html
   contact.html
   style.css
+  script.js
   assets/
     images/
       logo/
