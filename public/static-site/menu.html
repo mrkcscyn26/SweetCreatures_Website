@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png"/>
+        <title>
+            Menu — Sweet Creatures
+        </title>
+        <meta content="Explore our menu of fresh cakes, drinks, cupcakes, cookies, fries, and handmade pasta." name="description"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="redesign.css" rel="stylesheet"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header" data-site-header>
+            <div class="header-inner">
+                <a class="brand-link" href="index.html#top" aria-label="Sweet Creatures home">
+                    <img alt="" class="brand-mark" src="assets/images/logo/logo.png"/>
+                    <span>Sweet Creatures</span>
+                </a>
+                <nav aria-label="Main navigation" class="desktop-nav">
+                    <a href="index.html#top">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="custom-cakes.html">Custom Cakes</a>
+                    <a href="gallery.html">Gallery</a>
+                </nav>
+                <div class="header-actions">
+                    <form action="menu.html" class="header-search" method="get" role="search">
+                        <button aria-expanded="false" aria-label="Open menu search" class="header-search-toggle" type="button">
+                            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.6 15.6 4.4 4.4"/></svg>
+                        </button>
+                        <label class="sr-only" for="header-search-input">Search the menu</label>
+                        <input id="header-search-input" name="q" placeholder="Search menu..." type="search"/>
+                    </form>
+                    <a class="header-contact" href="contact.html">Contact Us</a>
+                    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation" class="mobile-menu-toggle" type="button">
+                        <svg aria-hidden="true" class="menu-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                        <svg aria-hidden="true" class="close-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <nav aria-label="Mobile navigation" class="mobile-menu" hidden id="mobile-menu">
+                <a href="index.html#top">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="custom-cakes.html">Custom Cakes</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="section">
+                <div class="container">
+                    <div class="page-banner glass box">
+                        <h1>
+                            Menu
+                        </h1>
+                        <p>
+                            Everything in the display case
+                        </p>
+                    </div>
+                    <!-- Menu Filters & Search -->
+                    <div aria-label="Filter menu" class="filters glass box" id="filters" role="group">
+                        <button class="chip active" data-filter="all" type="button">
+                            All
+                        </button>
+                        <button class="chip" data-filter="cakes" type="button">
+                            Cakes
+                        </button>
+                        <button class="chip" data-filter="drinks" type="button">
+                            Drinks
+                        </button>
+                        <button class="chip" data-filter="cupcakes" type="button">
+                            Cupcakes & Cookies
+                        </button>
+                        <button class="chip" data-filter="fries" type="button">
+                            Fries & Nachos
+                        </button>
+                        <button class="chip" data-filter="pasta" type="button">
+                            Pasta
+                        </button>
+                        <button class="chip" data-filter="crepes" type="button">
+                            Crêpes
+                        </button>
+                        <button class="chip" data-filter="pastries" type="button">
+                            Pastries
+                        </button>
+                        <button class="chip" data-filter="mains" type="button">
+                            Mains
+                        </button>
+                        <div class="search-wrapper">
+                            <input aria-label="Search the menu" class="search-input" id="search" placeholder="Search the menu..." type="search"/>
+                        </div>
+                    </div>
+                    <div class="empty-state" id="empty" style="display:none;">
+                        <p>
+                            No items match your search. Try another keyword or choose
+                            <strong>
+                                All
+                            </strong>
+                            .
+                        </p>
+                    </div>
+                    <div class="menu-section" data-cat="cakes">
+                        <h2 class="section-title">
+                            Cakes
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Classic Chocolate Cake — chocolate drip cake with ganache, chocolate bars and wafer rolls" src="assets/images/menu/classic-chocolate-cake.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Classic Chocolate Cake
+                                    </h4>
+                                    <p>
+                                        Dark cocoa sponge, whipped ganache, chocolate shavings.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱380
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Strawberry Cream Cake — ring of fresh strawberries on whipped cream frosting" src="assets/images/menu/strawberry-cake-ring.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Strawberry Cream Cake
+                                    </h4>
+                                    <p>
+                                        Vanilla sponge, fresh strawberries, hand-whipped cream.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱400
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Basque Cheesecake — burnt caramelised top, dense creamy centre" src="assets/images/menu/basque-cheesecake.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Basque Cheesecake
+                                    </h4>
+                                    <p>
+                                        Burnt caramelised top, dense creamy centre.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱340
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Salted Caramel Walnut Cake — glossy caramel drizzle with roasted walnuts and cream" src="assets/images/menu/salted-caramel-walnut-cake.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Salted Caramel Walnut Cake
+                                    </h4>
+                                    <p>
+                                        Buttery sponge with glossy caramel drizzle and roasted walnut crunch.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱480
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="drinks">
+                        <h2 class="section-title">
+                            Drinks
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Cafe Latte — espresso drink with rich milk and latte art" src="assets/images/menu/cafe-latte.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Cafe Latte
+                                    </h4>
+                                    <p>
+                                        Espresso with a smooth, creamy milk finish and delicate latte art.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱110
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Chocolate Cookie Frappe — rich chocolate drink with whipped cream and cookie crumbles" src="assets/images/menu/chocolate-cookie-frappe.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Chocolate Cookie Frappe
+                                    </h4>
+                                    <p>
+                                        Rich chocolate frappe topped with whipped cream and cookie crumble.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱120
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Strawberry Chocolate Float — sweet strawberry cream drink with chocolate drizzle and whipped cream" src="assets/images/menu/strawberry-choco-float.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Strawberry Chocolate Float
+                                    </h4>
+                                    <p>
+                                        Sweet strawberry cream blend topped with whipped cream and rich chocolate drizzle.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱120
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Matcha Tiramisu Drink — creamy matcha layers with whipped topping and biscuit" src="assets/images/menu/matcha-tiramisu-drink-new.png" style="display:block;margin:0 auto;max-height:280px;object-fit:contain;"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Matcha Tiramisu Drink
+                                    </h4>
+                                    <p>
+                                        Creamy matcha layers with whipped topping and a crisp biscuit finish.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱155
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Ube Frappe — blended purple ube drink with whipped cream" src="assets/images/menu/ube-float.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Ube Cloud Frappe
+                                    </h4>
+                                    <p>
+                                        Sweet purple ube blended drink with a fluffy whipped cream top.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱145
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="cupcakes">
+                        <h2 class="section-title">
+                            Cupcakes & Cookies
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Brownies — rich chocolate brownies with a fudgy centre" src="assets/images/menu/brownies.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Brownies
+                                    </h4>
+                                    <p>
+                                        Rich, fudgy chocolate brownies with a soft chewy centre.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱50
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Cheesecake Brownies — rich chocolate brownie topped with creamy cheesecake layer" src="assets/images/menu/cheesecake-brownies.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Cheesecake Brownies
+                                    </h4>
+                                    <p>
+                                        Rich chocolate brownie base topped with a creamy cheesecake layer.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱65
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Chocolate Chip Cookie — thick chewy cookie, dark and milk chocolate chunks and discs" src="assets/images/menu/chocolate-chip-cookie-new.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Chocolate Chip Cookie
+                                    </h4>
+                                    <p>
+                                        Thick chewy cookie, dark and milk chocolate chunks and discs.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱99
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Red Velvet Cookie — cocoa cookie, cream cheese centre, white chocolate chips" src="assets/images/menu/red-velvet-cookie.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Red Velvet Cookie
+                                    </h4>
+                                    <p>
+                                        Cocoa cookie, cream cheese centre, white chocolate chips.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱105
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Pistachio Almond Cookie — chocolate chip cookie, pistachio cream, sliced almonds, chocolate drizzle" src="assets/images/menu/pistachio-almond-cookie.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Pistachio Almond Cookie
+                                    </h4>
+                                    <p>
+                                        Chocolate chip base, pistachio cream, sliced almonds, chocolate drizzle.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱125
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Blueberry Cream Muffin — soft vanilla muffin topped with whipped cream and blueberry compote" src="assets/images/menu/blueberry-cream-muffin.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Blueberry Cream Muffin
+                                    </h4>
+                                    <p>
+                                        Soft vanilla muffin topped with whipped cream and a juicy blueberry compote.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱125
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="fries">
+                        <h2 class="section-title">
+                            Fries & Nachos
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Loaded Nachos — crispy tortilla chips topped with beef, cheese, vegetables and creamy sauce" src="assets/images/menu/loaded-nachos.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Loaded Nachos
+                                    </h4>
+                                    <p>
+                                        Crispy tortilla chips topped with beef, cheese, vegetables and creamy sauce.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱100
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="pasta">
+                        <h2 class="section-title">
+                            Pasta
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb" style="text-align:center;">
+                                    <img alt="Carbonara Pasta — creamy white sauce spaghetti with mushrooms and garlic" src="assets/images/menu/carbonara-pasta-new.png" style="max-height:260px;object-fit:contain;"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Carbonara Pasta
+                                    </h4>
+                                    <p>
+                                        Spaghetti with cream, bacon, and cheese.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱130
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="crepes">
+                        <h2 class="section-title">
+                            Crêpes
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Banana Caramel Crunch Crêpe — folded crêpe with banana, caramel drizzle and ice cream" src="assets/images/menu/banana-caramel-crunch-crepe-new.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Banana Caramel Crunch Crêpe
+                                    </h4>
+                                    <p>
+                                        Folded crêpe, sliced banana, cornflake crunch, vanilla ice cream, salted caramel drizzle, icing sugar.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱120
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="pastries">
+                        <h2 class="section-title">
+                            Pastries
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Cinnamon Roll Trio — iced brioche rolls, three toppings: Biscoff crumble and caramel, sliced almonds, blueberry compote" src="assets/images/menu/cinnamon-roll-trio.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Cinnamon Roll Trio
+                                    </h4>
+                                    <p>
+                                        Iced brioche rolls, three toppings: Biscoff crumble and salted caramel, sliced almonds, blueberry compote.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱200
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Plain Sesame Bagel — soft sesame-coated bagel with a golden crust" src="assets/images/menu/plain-sesame-bagel.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Plain Sesame Bagel
+                                    </h4>
+                                    <p>
+                                        Soft, golden bagel coated with toasted sesame seeds.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱45
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Egg Tart — flaky pastry shell filled with smooth custard" src="assets/images/menu/egg-tart.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Egg Tart
+                                    </h4>
+                                    <p>
+                                        Flaky pastry shell filled with smooth, golden egg custard.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱25
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="menu-section" data-cat="mains">
+                        <h2 class="section-title">
+                            Mains
+                        </h2>
+                        <div class="menu-rows">
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Chicken Skewers — grilled chicken skewers with yogurt sauce and spicy glaze" src="assets/images/menu/chicken-skewers.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Chicken Skewers
+                                    </h4>
+                                    <p>
+                                        Grilled chicken skewers with creamy sauce, herbs, and a savory chili glaze.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱150
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Beef Salisbury Rice — beef in gravy over rice with a fried egg" src="assets/images/menu/beef-salisbury-rice-new.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Beef Salisbury Rice
+                                    </h4>
+                                    <p>
+                                        Fried egg over rice, beef salisbury, gravy, fresh herbs.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱140
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Garlic Bread Lasagna — baked lasagna topped with herbs beside garlic bread" src="assets/images/menu/garlic-bread-lasagna.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Garlic Bread Lasagna
+                                    </h4>
+                                    <p>
+                                        Baked lasagna layers with rich tomato sauce, herbs, and a side of garlic bread.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱145
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Crispy Pork Rice — rice with crispy pork chop, sunny-side egg, pickled vegetables and herbs" src="assets/images/menu/crispy-pork-rice.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Crispy Pork Rice
+                                    </h4>
+                                    <p>
+                                        Rice, crispy pork chop, sunny-side egg, pickled vegetables, herbs.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱150
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Crispy Bangus Rice — crispy bangus with steamed rice, fried egg, and vegetable sides" src="assets/images/menu/crispy-banggus-rice.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Crispy Bangus Rice
+                                    </h4>
+                                    <p>
+                                        Golden crispy bangus with steamed rice, fried egg, and fresh vegetable sides.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱150
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Sausage Garlic Rice — garlicky rice served with sausage, fried egg, cucumber and tomato" src="assets/images/menu/sausage-garlic-rice.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Sausage Garlic Rice
+                                    </h4>
+                                    <p>
+                                        Garlic rice with grilled sausage, fried egg, tomato and cucumber.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱165
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Garlic Fried Chicken — crispy fried chicken wings with herbs and garlic dip" src="assets/images/menu/garlic-fried-chicken.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Garlic Fried Chicken
+                                    </h4>
+                                    <p>
+                                        Crispy fried chicken with garlic seasoning and a creamy herb dip.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱130
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Beef Mushroom Rice Bowl — creamy mushroom beef sauce over rice with a fried egg" src="assets/images/menu/mushroom-beef-rice-bowl.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Beef Mushroom Rice Bowl
+                                    </h4>
+                                    <p>
+                                        Creamy mushroom beef sauce over warm rice with a runny fried egg.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱155
+                                </p>
+                            </article>
+                            <article class="menu-row glass box">
+                                <div class="frame frame-thumb">
+                                    <img alt="Grilled Fish Rice Bowl — grilled fish with rice, egg, salad and cucumber tomato sides" src="assets/images/menu/grilled-fish-rice-bowl.png"/>
+                                </div>
+                                <div class="menu-info">
+                                    <h4>
+                                        Grilled Fish Rice Bowl
+                                    </h4>
+                                    <p>
+                                        Grilled fish fillet with garlic rice, fried egg, tomato, cucumber and herbs.
+                                    </p>
+                                </div>
+                                <p class="menu-price">
+                                    ₱160
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cta-bar glass box">
+                        <p>
+                            Looking for a custom cake for an upcoming celebration?
+                        </p>
+                        <a class="cta-link" href="custom-cakes.html">
+                            Order Custom Cakes →
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div aria-hidden="true" class="footer-mist">
+                <img alt="" loading="lazy" src="assets/images/redesign/hero-fog.png"/>
+                <div></div>
+            </div>
+            <div class="container footer-main">
+                <section class="footer-brand" aria-label="About Sweet Creatures">
+                    <a class="footer-mark" href="index.html">
+                        <img alt="Sweet Creatures logo" height="76" src="assets/images/logo/logo.png" width="76"/>
+                    </a>
+                    <a class="footer-logo" href="index.html">Sweet Creatures</a>
+                    <p>Sweet treats, iced coffee, cookies, and custom cakes for every fan and every celebration.</p>
+                    <nav aria-label="Social media" class="social-nav">
+                        <a aria-label="Sweet Creatures on Instagram" href="https://www.instagram.com/_sweetcreaturesss/" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <rect height="18" rx="5" width="18" x="3" y="3"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle>
+                            </svg>
+                        </a>
+                        <a aria-label="Sweet Creatures on Facebook" href="https://www.facebook.com/sweetcreaturesph" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <circle cx="12" cy="12" r="9.5"></circle>
+                                <path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z"></path>
+                            </svg>
+                        </a>
+                        <a aria-label="Sweet Creatures on TikTok" href="https://www.tiktok.com/@sweet.creatures7" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1"></path>
+                                <path d="M14 4c.4 2.1 1.9 3.6 4 3.9"></path>
+                            </svg>
+                        </a>
+                    </nav>
+                </section>
+                <nav aria-label="Explore" class="footer-links">
+                    <h2>Explore</h2>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="custom-cakes.html">Custom Cakes</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About Us</a>
+                </nav>
+                <section class="footer-contact" aria-labelledby="footer-contact-title">
+                    <h2 id="footer-contact-title">Visit Us</h2>
+                    <p>Puregas Pampano St, Longos, Malabon, Philippines, 1472</p>
+                    <p>Open daily, 12pm–11pm</p>
+                    <a href="mailto:sweetcreatures2020@gmail.com">sweetcreatures2020@gmail.com</a>
+                    <a href="contact.html">Contact us</a>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">© 2026 Sweet Creatures · All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <nav aria-label="Main navigation" class="bottom-nav glass">
+            <ul class="nav-list">
+                <li>
+                    <a aria-label="Home" class="nav-home" href="index.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="m3 10 9-7 9 7v10H3z"></path>
+                            <path d="M9 20v-7h6v7"></path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="About Us" href="about.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <circle cx="12" cy="12" r="9">
+                            </circle>
+                            <path d="M12 11v6m0-10v1">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            About Us
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Menu" href="menu.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Menu
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-search-item">
+                    <form action="menu.html" class="nav-search" role="search">
+                        <button aria-expanded="false" aria-label="Open menu search" class="nav-search-toggle" type="button">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24" width="20">
+                                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                                <path d="m16 16 4 4"></path>
+                            </svg>
+                        </button>
+                        <input aria-label="Search the menu" name="q" placeholder="Search..." type="search"/>
+                    </form>
+                </li>
+                <li>
+                    <a aria-label="Custom Cakes" href="custom-cakes.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 12h16v8H4zM4 16h16M8 12V8h8v4M12 8V4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Custom Cakes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Gallery" href="gallery.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="18" rx="3" width="18" x="3" y="3">
+                            </rect>
+                            <circle cx="8" cy="8" r="1">
+                            </circle>
+                            <path d="m3 17 6-6 5 5 3-3 4 4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Gallery
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Contact Us" href="contact.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="14" rx="3" width="18" x="3" y="5">
+                            </rect>
+                            <path d="m3 6 9 7 9-7">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Contact Us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

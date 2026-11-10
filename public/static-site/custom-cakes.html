@@ -1,0 +1,606 @@
+<!--THINGS TO ADD
+
+1. Toast Notification
+2. Pictures needed
+3. Drop down menu UI design for Cake request form
+4. Glassmorphism on the header for hamburger menu
+5. Pill style in the top middle for the header then apply glassmorphism
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png"/>
+        <title>
+            Custom Cakes — Sweet Creatures
+        </title>
+        <meta content="Custom cakes made to order for birthdays, weddings, baby showers, and celebrations. View designs and ordering steps." name="description"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="redesign.css" rel="stylesheet"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header" data-site-header>
+            <div class="header-inner">
+                <a class="brand-link" href="index.html#top" aria-label="Sweet Creatures home">
+                    <img alt="" class="brand-mark" src="assets/images/logo/logo.png"/>
+                    <span>Sweet Creatures</span>
+                </a>
+                <nav aria-label="Main navigation" class="desktop-nav">
+                    <a href="index.html#top">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="custom-cakes.html">Custom Cakes</a>
+                    <a href="gallery.html">Gallery</a>
+                </nav>
+                <div class="header-actions">
+                    <form action="menu.html" class="header-search" method="get" role="search">
+                        <button aria-expanded="false" aria-label="Open menu search" class="header-search-toggle" type="button">
+                            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.6 15.6 4.4 4.4"/></svg>
+                        </button>
+                        <label class="sr-only" for="header-search-input">Search the menu</label>
+                        <input id="header-search-input" name="q" placeholder="Search menu..." type="search"/>
+                    </form>
+                    <a class="header-contact" href="contact.html">Contact Us</a>
+                    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation" class="mobile-menu-toggle" type="button">
+                        <svg aria-hidden="true" class="menu-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                        <svg aria-hidden="true" class="close-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <nav aria-label="Mobile navigation" class="mobile-menu" hidden id="mobile-menu">
+                <a href="index.html#top">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="custom-cakes.html">Custom Cakes</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="section pc-page">
+                <div class="container">
+                        <div class="page-banner pc-banner glass box">
+                            <span class="eyebrow">
+                                Designed Around You
+                            </span>
+                            <h1>
+                                Custom Cakes
+                            </h1>
+                            <p>
+                                Made to order for any occasion
+                            </p>
+                        </div>
+                    <div class="cake-overview-layout">
+                        <div class="cake-intro">
+                        <div class="story-text glass box">
+                            <h2 class="eyebrow">Custom Cake Overview</h2>
+                            <p>
+                                We create custom cakes that bring your ideas to life through thoughtful designs, beautiful details, and quality craftsmanship. Every cake is carefully crafted with creativity and attention to detail, combining appealing designs with delightful flavors to create something truly special. From the initial concept to the final finishing touches, we make sure each creation reflects your personal style and adds a beautiful touch to your most memorable moments.
+                            </p>
+                            <p>
+                                From birthdays and anniversaries to weddings and other meaningful celebrations, we personalize each cake to suit your preferences and the occasion. With a variety of flavors, sizes, and designs to choose from, every creation is made to complement your vision and celebration. Whether you prefer something simple and elegant or detailed and eye-catching, we are dedicated to creating cakes that make your special moments even sweeter and more unforgettable.
+                            </p>
+                        </div>
+                        <div class="cake-stats glass box stat-row">
+                            <div class="stat-box"><strong>7 days</strong><span>Free cancellation before pickup</span></div>
+                            <div class="stat-box"><strong>48 hours</strong><span>Last call for order changes</span></div>
+                            <div class="stat-box"><strong>30%</strong><span>Deposit holds your date</span></div>
+                        </div>
+                        </div>
+                        <div class="cake-deck">
+                          <div class="deck-stack">
+                           <div class="pc-overview-bezel glass">
+
+                            <div class="pc-overview slider">
+                                <div class="hero-slides">
+                                    <img alt="Custom cake design overview 1" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(1).png"/>
+                                    <img alt="Custom cake design overview 2" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(2).png"/>
+                                    <img alt="Custom cake design overview 3" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(3).png"/>
+                                    <img alt="Custom cake design overview 4" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(4).png"/>
+                                    <img alt="Custom cake design overview 5" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(5).png"/>
+                                    <img alt="Custom cake design overview 6" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(6).png"/>
+                                    <img alt="Custom cake design overview 7" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(7).png"/>
+                                    <img alt="Custom cake design overview 8" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(8).png"/>
+                                    <img alt="Custom cake design overview 9" src="assets/images/custom-cakes/Custom%20Cake%20Overview%20(9).png"/>
+                                </div>
+                            </div>
+                           </div>
+                          </div>
+                          <div class="deck-controls">
+                            <button class="slider-previous glass" type="button" aria-label="Previous cake photo">←</button>
+                            <span class="slide-counter" aria-live="off">1 / 9</span>
+                            <button class="slider-next glass" type="button" aria-label="Next cake photo">→</button>
+                          </div>
+                        </div>
+                    </div>
+                    <h2 class="section-title">
+                        Design Gallery Overview
+                    </h2>
+                    <div class="grid grid-3 pc-gallery">
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Dinosaur birthday cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Dinosaur%20Birthday.png"/>
+                            </div>
+                            <figcaption>
+                                Dinosaur birthday
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Two-tier wedding cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Two-tier%20wedding.png"/>
+                            </div>
+                            <figcaption>
+                                Two-tier wedding
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Baby shower elephant-themed cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Baby%20shower%20elephants.png"/>
+                            </div>
+                            <figcaption>
+                                Baby shower elephants
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Corporate logo cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Corporate%20logo%20cake.jpg"/>
+                            </div>
+                            <figcaption>
+                                Corporate logo cake
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Rainbow cupcakes" decoding="async" loading="lazy" src="assets/images/custom-cakes/Rainbow%20cupcakes.jpg"/>
+                            </div>
+                            <figcaption>
+                                Rainbow cupcakes
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Floral semi-naked cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Floral%20semi-naked.jpg"/>
+                            </div>
+                            <figcaption>
+                                Floral semi-naked
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Number cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Number%20cake.jpg"/>
+                            </div>
+                            <figcaption>
+                                Number cake
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Unicorn cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Unicorn%20cake.jpg"/>
+                            </div>
+                            <figcaption>
+                                Unicorn cake
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Chocolate ganache tier cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Chocolate%20ganache.jpg"/>
+                            </div>
+                            <figcaption>
+                                Chocolate ganache tier
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Anniversary hearts cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Anniversary%20hearts%20cake.jpg"/>
+                            </div>
+                            <figcaption>
+                                Anniversary hearts
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Character bust cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Character%20bust.png"/>
+                            </div>
+                            <figcaption>
+                                Character bust
+                            </figcaption>
+                        </figure>
+                        <figure class="gallery-item glass box" data-reveal="">
+                            <div class="frame frame-gallery">
+                                <img alt="Holiday yule log cake" decoding="async" loading="lazy" src="assets/images/custom-cakes/Holiday%20yule%20log.jpg"/>
+                            </div>
+                            <figcaption>
+                                Holiday yule log
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <h2 class="section-title">
+                        How to Order
+                    </h2>
+                    <div class="order-stepper glass box">
+                        <ol class="order-steps">
+                            <li class="order-step">
+                                <div class="step-number">1</div>
+                                <div class="step-copy">
+                                    <h3>Tell us about it</h3>
+                                    <p>Occasion, size, flavours</p>
+                                </div>
+                            </li>
+                            <li class="order-step">
+                                <div class="step-number">2</div>
+                                <div class="step-copy">
+                                    <h3>We design it</h3>
+                                    <p>You approve the details</p>
+                                </div>
+                            </li>
+                            <li class="order-step">
+                                <div class="step-number">3</div>
+                                <div class="step-copy">
+                                    <h3>Pick it up</h3>
+                                    <p>Fresh on the day</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="cta-bar pc-cta-bar glass box">
+                            <p>
+                                Ready to start planning your cake?
+                            </p>
+                            <a class="pc-cta" href="#request" id="startLink">
+                                <span class="pc-cta-label">
+                                    Message us here
+                                </span>
+                                <span aria-hidden="true" class="pc-cta-icon">
+                                    <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24" width="16">
+                                        <path d="M5 12h13">
+                                        </path>
+                                        <path d="M12.5 6l6 6-6 6">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <h2 class="section-title" id="request">
+                        Cake Request Form
+                    </h2>
+                    <div class="pc-bezel pc-bezel-soft glass box">
+                        <div class="form-card pc-form-card glass box">
+                            <form class="contact-form pc-form" id="cakeForm" novalidate="">
+                                <div class="form-header">
+                                    <h3>
+                                        Request a custom cake or quotation
+                                    </h3>
+                                    <p class="form-note">
+                                        Fill this out and we will reply with a quote and the next steps.
+                                    </p>
+                                </div>
+                                <div class="fields-grid">
+                                    <div class="field">
+                                        <label for="cName">
+                                            Full name
+                                        </label>
+                                        <input autocomplete="name" id="cName" name="name" placeholder="Your name" required="" type="text"/>
+                                        <span class="error-message">
+                                            Please enter your name.
+                                        </span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cEmail">
+                                            Email
+                                        </label>
+                                        <input autocomplete="email" id="cEmail" name="email" placeholder="you@email.com" required="" type="email"/>
+                                        <span class="error-message">
+                                            Please enter a valid email.
+                                        </span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cPhone">
+                                            Contact number
+                                        </label>
+                                        <input autocomplete="tel" id="cPhone" name="phone" placeholder="09XX XXX XXXX" required="" type="tel"/>
+                                        <span class="error-message">
+                                            Please enter your contact number.
+                                        </span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cType">
+                                            Request type
+                                        </label>
+                                        <select id="cType" name="type">
+                                            <option>
+                                                Quotation
+                                            </option>
+                                            <option>
+                                                Reservation
+                                            </option>
+                                            <option>
+                                                Customization
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cOcc">
+                                            Occasion
+                                        </label>
+                                        <select id="cOcc" name="occasion">
+                                            <option>
+                                                Birthday
+                                            </option>
+                                            <option>
+                                                Wedding
+                                            </option>
+                                            <option>
+                                                Baby shower
+                                            </option>
+                                            <option>
+                                                Corporate
+                                            </option>
+                                            <option>
+                                                Anniversary
+                                            </option>
+                                            <option>
+                                                Holiday
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cSize">
+                                            Cake size
+                                        </label>
+                                        <select id="cSize" name="size">
+                                            <option>
+                                                Small (6 inch)
+                                            </option>
+                                            <option>
+                                                Medium (8 inch)
+                                            </option>
+                                            <option>
+                                                Large (10 inch)
+                                            </option>
+                                            <option>
+                                                Tiered
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cFlavor">
+                                            Flavor
+                                        </label>
+                                        <input id="cFlavor" name="flavor" placeholder="Chocolate, ube, vanilla..." type="text"/>
+                                    </div>
+                                    <div class="field">
+                                        <label for="cDate">
+                                            Pickup date
+                                        </label>
+                                        <input id="cDate" name="date" required="" type="date"/>
+                                        <span class="error-message">
+                                            Please choose a pickup date.
+                                        </span>
+                                    </div>
+                                    <div class="field field-full field-photo">
+                                        <label for="cPhoto">
+                                            Reference photo (optional)
+                                        </label>
+                                        <div class="file-well">
+                                            <p class="file-prompt">
+                                                Drop a file or
+                                                <span>
+                                                    browse
+                                                </span>
+                                            </p>
+                                            <input accept="image/*" id="cPhoto" name="photo" type="file"/>
+                                        </div>
+                                    </div>
+                                    <div class="field field-full">
+                                        <label for="cNotes">
+                                            Design ideas and notes
+                                        </label>
+                                        <textarea id="cNotes" name="notes" placeholder="Theme, colors, message on the cake, allergies..." rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">
+                                    Send Request
+                                </button>
+                                <div class="form-status-msg glass" id="cakeMsg" role="status" aria-live="polite">
+                                    Request sent! We will contact you within 24 hours with your quote.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <h2 class="section-title">
+                        Cancellation & Refund Policy
+                    </h2>
+                    <div class="pc-bezel pc-bezel-soft glass box">
+                        <div class="policy-card pc-policy-card glass box">
+                            <div class="policy-item">
+                                <h3>
+                                    Cancellations
+                                </h3>
+                                <p>
+                                    Free up to 7 days before your pickup date.
+                                </p>
+                            </div>
+                            <div class="policy-item">
+                                <h3>
+                                    Refunds
+                                </h3>
+                                <p>
+                                    Issued for cancellations made within that window.
+                                </p>
+                            </div>
+                            <div class="policy-item">
+                                <h3>
+                                    Changes to an Order
+                                </h3>
+                                <p>
+                                    Accepted up to 48 hours before pickup.
+                                </p>
+                            </div>
+                            <div class="policy-item">
+                                <h3>
+                                    Non-refundable Deposits
+                                </h3>
+                                <p>
+                                    A 30% deposit holds your date.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div aria-hidden="true" class="footer-mist">
+                <img alt="" loading="lazy" src="assets/images/redesign/hero-fog.png"/>
+                <div></div>
+            </div>
+            <div class="container footer-main">
+                <section class="footer-brand" aria-label="About Sweet Creatures">
+                    <a class="footer-mark" href="index.html">
+                        <img alt="Sweet Creatures logo" height="76" src="assets/images/logo/logo.png" width="76"/>
+                    </a>
+                    <a class="footer-logo" href="index.html">Sweet Creatures</a>
+                    <p>Sweet treats, iced coffee, cookies, and custom cakes for every fan and every celebration.</p>
+                    <nav aria-label="Social media" class="social-nav">
+                        <a aria-label="Sweet Creatures on Instagram" href="https://www.instagram.com/_sweetcreaturesss/" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <rect height="18" rx="5" width="18" x="3" y="3"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.5" cy="6.5" fill="currentColor" r="1" stroke="none"></circle>
+                            </svg>
+                        </a>
+                        <a aria-label="Sweet Creatures on Facebook" href="https://www.facebook.com/sweetcreaturesph" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <circle cx="12" cy="12" r="9.5"></circle>
+                                <path d="M14.5 8.5h-1.8c-.9 0-1.5.7-1.5 1.6v1.9H9.7v2.1h1.5V19h2.1v-4.9h1.7l.3-2.1h-2v-1.6c0-.3.2-.5.5-.5h1.7z"></path>
+                            </svg>
+                        </a>
+                        <a aria-label="Sweet Creatures on TikTok" href="https://www.tiktok.com/@sweet.creatures7" rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="20">
+                                <path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1"></path>
+                                <path d="M14 4c.4 2.1 1.9 3.6 4 3.9"></path>
+                            </svg>
+                        </a>
+                    </nav>
+                </section>
+                <nav aria-label="Explore" class="footer-links">
+                    <h2>Explore</h2>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="custom-cakes.html">Custom Cakes</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About Us</a>
+                </nav>
+                <section class="footer-contact" aria-labelledby="footer-contact-title">
+                    <h2 id="footer-contact-title">Visit Us</h2>
+                    <p>Puregas Pampano St, Longos, Malabon, Philippines, 1472</p>
+                    <p>Open daily, 12pm–11pm</p>
+                    <a href="mailto:sweetcreatures2020@gmail.com">sweetcreatures2020@gmail.com</a>
+                    <a href="contact.html">Contact us</a>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">© 2026 Sweet Creatures · All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <nav aria-label="Main navigation" class="bottom-nav glass">
+            <ul class="nav-list">
+                <li>
+                    <a aria-label="Home" class="nav-home" href="index.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="m3 10 9-7 9 7v10H3z"></path>
+                            <path d="M9 20v-7h6v7"></path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="About Us" href="about.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <circle cx="12" cy="12" r="9">
+                            </circle>
+                            <path d="M12 11v6m0-10v1">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            About Us
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Menu" href="menu.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Menu
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-search-item">
+                    <form action="menu.html" class="nav-search" role="search">
+                        <button aria-expanded="false" aria-label="Open menu search" class="nav-search-toggle" type="button">
+                            <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24" width="20">
+                                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                                <path d="m16 16 4 4"></path>
+                            </svg>
+                        </button>
+                        <input aria-label="Search the menu" name="q" placeholder="Search..." type="search"/>
+                    </form>
+                </li>
+                <li>
+                    <a aria-label="Custom Cakes" href="custom-cakes.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <path d="M4 12h16v8H4zM4 16h16M8 12V8h8v4M12 8V4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Custom Cakes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Gallery" href="gallery.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="18" rx="3" width="18" x="3" y="3">
+                            </rect>
+                            <circle cx="8" cy="8" r="1">
+                            </circle>
+                            <path d="m3 17 6-6 5 5 3-3 4 4">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Gallery
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Contact Us" href="contact.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="14" rx="3" width="18" x="3" y="5">
+                            </rect>
+                            <path d="m3 6 9 7 9-7">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Contact Us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

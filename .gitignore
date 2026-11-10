@@ -8,3 +8,6 @@ Thumbs.db
 .claude/
 .impeccable/
 
+# Node/Vite
+node_modules/
+dist/
