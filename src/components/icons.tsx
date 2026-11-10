@@ -45,6 +45,32 @@ export function SearchIcon(props: IconProps) {
   );
 }
 
+export function HomeIcon(props: IconProps) {
+  return (
+    <svg {...stroke} {...props}>
+      <path d="m3 10 9-7 9 7v10H3z" />
+      <path d="M9 20v-7h6v7" />
+    </svg>
+  );
+}
+
+export function InfoIcon(props: IconProps) {
+  return (
+    <svg {...stroke} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v6m0-10v1" />
+    </svg>
+  );
+}
+
+export function ListIcon(props: IconProps) {
+  return (
+    <svg {...stroke} {...props}>
+      <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+    </svg>
+  );
+}
+
 export function MenuIcon(props: IconProps) {
   return (
     <svg {...stroke} {...props}>

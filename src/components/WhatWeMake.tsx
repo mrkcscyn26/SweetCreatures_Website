@@ -49,11 +49,11 @@ export function WhatWeMake() {
                     </span>
                   </div>
 
-                  <div className="relative z-10 mt-12">
+                  <div className="relative z-10 mt-12 text-center">
                     <h3 className="font-display text-[26px] font-medium tracking-[-0.03em] text-cream-100">
                       {item.title}
                     </h3>
-                    <p className="mt-2 min-h-[3.25em] max-w-[30ch] text-[15px] leading-relaxed text-white/65">
+                    <p className="mx-auto mt-2 min-h-[3.25em] max-w-[30ch] text-[15px] leading-relaxed text-white/65">
                       {item.description}
                     </p>
                   </div>

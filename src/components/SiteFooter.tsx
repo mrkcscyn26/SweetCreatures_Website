@@ -18,7 +18,7 @@ const socialIcons = {
 
 export function SiteFooter() {
   return (
-    <footer className="relative mt-16 bg-forest-900 text-cream-100 sm:mt-20">
+    <footer className="relative bg-forest-900 pb-20 text-cream-100">
       {/* Mirror of the hero: cream mist dissolving into forest green */}
       <div aria-hidden="true" className="footer-fog pointer-events-none relative h-[clamp(200px,30vw,440px)] overflow-hidden">
         <img

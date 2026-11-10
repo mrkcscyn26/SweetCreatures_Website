@@ -2,7 +2,7 @@ import heroFog from "@/assets/raw/hero-fog.png";
 
 export const images = {
   heroFog,
-  ourShop: "/static-site/assets/images/gallery/Shop Atmosphere Shopfront.jpg",
+  ourShop: "/static-site/assets/images/index/our_shop.jpg",
 };
 
 export type NavLink = {
@@ -14,10 +14,10 @@ export type NavLink = {
 /** Center pill navigation (the original site's pages). */
 export const mainNav: NavLink[] = [
   { label: "Home", href: "#top", current: true },
-  { label: "About Us", href: "/static-site/about.html" },
   { label: "Menu", href: "/static-site/menu.html" },
   { label: "Custom Cakes", href: "/static-site/custom-cakes.html" },
   { label: "Gallery", href: "/static-site/gallery.html" },
+  { label: "About Us", href: "/static-site/about.html" },
 ];
 
 /** Outlined call to action on the right of the header. */

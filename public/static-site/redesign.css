@@ -248,7 +248,69 @@ body::before {
 }
 
 .bottom-nav {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    display: block !important;
+    width: max-content;
+    max-width: calc(100% - 32px);
+    padding: 8px;
+    transform: translateX(-50%);
+    color: #fbf8f1;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 999px;
+    background: rgba(40,65,44,.48);
+    box-shadow: 0 18px 40px -24px rgba(0,0,0,.58);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+.nav-list {
+    align-items: stretch;
+    gap: 4px;
+}
+
+.nav-list a {
+    min-width: 72px;
+    min-height: 54px;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    color: rgba(255,255,255,.76);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.nav-list a.active {
+    border-radius: 999px;
+    color: #fff;
+    background: rgba(255,255,255,.14);
+}
+
+.nav-list svg {
+    width: 21px;
+    height: 21px;
+}
+
+.nav-search-item {
     display: none !important;
+}
+
+.desktop-nav,
+.header-contact,
+.mobile-menu-toggle,
+.mobile-menu {
+    display: none !important;
+}
+
+.page-banner h1 {
+    margin: 0;
+}
+
+.page-banner p {
+    margin-top: 10px;
 }
 
 .btn,
@@ -287,6 +349,17 @@ body::before {
     border: 1px solid rgba(40,65,44,.1);
     border-radius: 28px;
     background: rgba(245,239,227,.82);
+}
+
+.page-banner,
+.page-banner.pc-banner {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .page-banner h1 {
@@ -609,14 +682,45 @@ body::before {
     border: 0;
     border-radius: 28px;
     color: #f5efe3;
-    background: #28412c;
+    background: transparent;
     box-shadow: 0 30px 60px -36px rgba(27,45,31,.75);
     transition: transform .35s ease, background .3s ease;
 }
 
+.make-card-image,
+.make-card-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.make-card-image {
+    z-index: -2;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+
+.make-card-overlay {
+    z-index: -1;
+    background: linear-gradient(to top, rgba(27,45,31,.96), rgba(27,45,31,.42) 58%, rgba(27,45,31,.16));
+}
+
+.link-card:hover .make-card-image {
+    transform: scale(1.05);
+}
+
+.make-card-copy {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    text-align: center;
+}
+
 .link-card:hover {
     transform: translateY(-4px);
-    background: #31503a;
+    background: transparent;
 }
 
 .link-card h3 {
@@ -626,6 +730,7 @@ body::before {
 }
 
 .link-card p {
+    margin-inline: auto;
     max-width: 30ch;
     color: rgba(255,255,255,.7);
     font-size: 14px;
@@ -685,7 +790,7 @@ body::before {
 
 /* Match the footer to the forest-green header. */
 .site-footer {
-    margin-top: 48px;
+    margin-top: 0;
     padding-top: 0;
     color: #fbf8f1;
     background: #28412c;
@@ -777,58 +882,6 @@ body::before {
 }
 
 @media (max-width: 900px) {
-    .desktop-nav,
-    .header-contact {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: grid;
-        border: 1px solid rgba(255,255,255,.18);
-    }
-
-    .mobile-menu-toggle .close-icon {
-        display: none;
-    }
-
-    .site-header.menu-open .mobile-menu-toggle .menu-icon {
-        display: none;
-    }
-
-    .site-header.menu-open .mobile-menu-toggle .close-icon {
-        display: block;
-    }
-
-    .mobile-menu:not([hidden]) {
-        display: flex;
-        position: absolute;
-        inset: calc(100% + 6px) 16px auto;
-        flex-direction: column;
-        gap: 3px;
-        padding: 8px;
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 24px;
-        background: #28412c;
-        box-shadow: 0 30px 60px -30px rgba(0,0,0,.65);
-    }
-
-    .mobile-menu a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 46px;
-        padding: 8px 14px;
-        border-radius: 15px;
-        color: rgba(255,255,255,.84);
-        font: 500 16px/1.3 var(--font-display);
-    }
-
-    .mobile-menu a:hover,
-    .mobile-menu a[aria-current="page"] {
-        color: #fff;
-        background: rgba(255,255,255,.1);
-    }
-
     .footer-main {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 36px;
@@ -902,6 +955,35 @@ body::before {
     .header-search:focus-within input {
         width: 100%;
         max-width: none;
+    }
+
+    .bottom-nav {
+        width: calc(100% - 28px);
+        bottom: calc(12px + env(safe-area-inset-bottom));
+        padding: 4px;
+        border-radius: 999px;
+    }
+
+    .nav-list {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .nav-list li {
+        display: flex;
+        flex: 1 1 0;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .nav-list a {
+        min-width: 0;
+        min-height: 44px;
+        padding: 5px 2px;
+    }
+
+    .nav-list a.active {
+        border-radius: 999px;
     }
 
     .site-header:not(.site-header-home) + main {
@@ -986,5 +1068,62 @@ body::before {
     *::before,
     *::after {
         transition-duration: .01ms !important;
+    }
+}
+
+.container > .page-banner {
+    margin-bottom: 36px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+@media (min-width: 1024px) {
+    .about-stats {
+        margin-bottom: clamp(24px, calc(100svh - 720px), 96px);
+    }
+
+    .section.pc-page {
+        padding-top: 24px;
+    }
+
+    .pc-page .cake-overview-layout {
+        margin-top: 0;
+        gap: clamp(24px, 2vw, 36px);
+    }
+
+    .pc-page .cake-intro .story-text {
+        gap: 12px;
+        padding: clamp(24px, 2vw, 32px);
+    }
+
+    .pc-page .cake-intro .story-text .eyebrow + p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .pc-page .cake-stats {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .pc-page .cake-stats .stat-box {
+        padding: 12px 8px;
+    }
+
+    .pc-page .cake-deck {
+        padding-top: 0;
+    }
+
+    .pc-page .cake-deck .pc-overview {
+        aspect-ratio: 4 / 5;
+    }
+
+    .pc-page .deck-controls {
+        margin-top: 12px;
     }
 }
