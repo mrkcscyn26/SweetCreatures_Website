@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { WhatWeMake } from "@/components/WhatWeMake";
 
-export default function App() {
+export default function HomePage() {
   return (
     <>
       <a

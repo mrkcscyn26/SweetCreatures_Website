@@ -25,9 +25,10 @@ SweetCreatures_Website/
   tsconfig.json
   vite.config.ts
   src/
-    App.tsx
     main.tsx
     index.css
+    pages/
+      HomePage.tsx
     assets/
     components/
     data/
