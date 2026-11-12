@@ -111,9 +111,9 @@ export const makes: MakeItem[] = [
 ];
 
 export const story = {
-  lead: "Sweet Creatures started in 2020 as a home-based shop during the pandemic. It is named after the Harry Styles song",
+  lead: "Sweet Creatures began as a home-based shop in 2020, during the pandemic. We named it after Harry Styles’ song",
   song: "Sweet Creature",
-  body: "Today it is a cafe and bakeshop in Malabon where fans can hang out over frappes, iced coffee, and nacho fries, and where we make custom cakes for your celebrations.",
+  body: "Today, our café and bakeshop in Malabon is a cozy place to gather over frappes, iced coffee, and nacho fries. We also make custom cakes for your celebrations.",
   facts: [
     { label: "Since", value: "2020" },
     { label: "Based in", value: "Malabon" },

@@ -13,7 +13,7 @@ export function OurShop() {
 
         <div className="mt-12 grid gap-5 lg:grid-cols-[1.1fr_1fr]">
           <Reveal className="h-full">
-            <div className="flex h-full flex-col rounded-[28px] border border-forest-900/10 bg-cream-100/80 p-7 shadow-[inset_0_1px_0_rgb(255_255_255/0.6)] sm:p-10">
+            <div className="flex h-full flex-col rounded-[28px] border border-white/60 bg-white/25 p-7 shadow-[inset_0_1px_0_rgb(255_255_255/0.68)] backdrop-blur-xl sm:p-10">
               <p className="font-display text-[clamp(1.3rem,2.1vw,1.7rem)] leading-[1.4] tracking-[-0.02em] text-ink">
                 {story.lead}{" "}
                 <span className="text-forest-700 underline decoration-sage/70 decoration-2 underline-offset-[6px]">
@@ -36,7 +36,7 @@ export function OurShop() {
                 ))}
               </dl>
 
-              <div className="mt-auto pt-9">
+              <div className="mt-auto flex justify-end pt-9">
                 <a href={story.cta.href} className="btn btn-outline group">
                   {story.cta.label}
                   <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -46,7 +46,7 @@ export function OurShop() {
           </Reveal>
 
           <Reveal delay={120} className="h-full">
-            <figure className="group relative h-full min-h-[320px] overflow-hidden rounded-[28px] bg-cream-300 sm:min-h-[440px]">
+            <figure className="group relative h-full min-h-[320px] overflow-hidden rounded-[28px] bg-cream-300 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-xl sm:min-h-[440px]">
               <img
                 src={images.ourShop}
                 alt="Sweet Creatures cafe storefront in Malabon"

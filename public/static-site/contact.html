@@ -27,10 +27,10 @@
                 </a>
                 <nav aria-label="Main navigation" class="desktop-nav">
                     <a href="index.html#top">Home</a>
-                    <a href="about.html">About Us</a>
                     <a href="menu.html">Menu</a>
                     <a href="custom-cakes.html">Custom Cakes</a>
                     <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About Us</a>
                 </nav>
                 <div class="header-actions">
                     <form action="menu.html" class="header-search" method="get" role="search">
@@ -49,34 +49,85 @@
             </div>
             <nav aria-label="Mobile navigation" class="mobile-menu" hidden id="mobile-menu">
                 <a href="index.html#top">Home</a>
-                <a href="about.html">About Us</a>
                 <a href="menu.html">Menu</a>
                 <a href="custom-cakes.html">Custom Cakes</a>
                 <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
             </nav>
         </header>
         <main id="main">
-            <section class="section">
+            <section class="section contact-section">
                 <div class="container">
-                    <h2 class="section-title">
+                    <h2 class="section-title" id="contact-details">
                         Find Us
                     </h2>
-                    <div class="grid grid-2 contact-location">
-                        <ul class="info-list glass box">
-                            <li>
-                                Puregas Pampano st, Longos, Malabon, Philippines, 1472
-                            </li>
-                            <li>
-                                Open Daily 12pm – 11pm
-                            </li>
-                            <li>
-                                sweetcreatures2020@gmail.com
-                            </li>
-                            <li>
-                                Instagram · Facebook · TikTok
-                            </li>
-                        </ul>
+                    <div class="contact-location">
+                        <div class="contact-details-grid">
+                            <section class="contact-info-card glass box" aria-label="Address and opening hours">
+                                <h3>Location &amp; Hours</h3>
+                                <div class="contact-detail">
+                                    <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                        <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                        <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.7"/>
+                                    </svg>
+                                    <div class="contact-detail-copy">
+                                        <strong>Address</strong>
+                                        <p>Puregas Pampano St, Longos, Malabon, Philippines, 1472</p>
+                                        <a class="contact-directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=14.6523816%2C120.9605402" rel="noopener noreferrer" target="_blank">Get Directions <span aria-hidden="true">↗</span></a>
+                                    </div>
+                                </div>
+                                <div class="contact-detail">
+                                    <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+                                        <path d="M12 7v5l3.2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                    </svg>
+                                    <div class="contact-detail-copy">
+                                        <strong>Hours</strong>
+                                        <p>Open daily, 12pm–11pm</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="contact-info-card glass box" aria-label="Email and social media">
+                                <h3>Get in Touch</h3>
+                                <div class="contact-detail">
+                                    <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                                        <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                    </svg>
+                                    <div class="contact-detail-copy">
+                                        <strong>Email</strong>
+                                        <a href="mailto:sweetcreatures2020@gmail.com">sweetcreatures2020@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-social-group">
+                                    <strong>Socials</strong>
+                                    <nav aria-label="Social media" class="contact-socials">
+                                    <a aria-label="Sweet Creatures on Instagram" href="https://www.instagram.com/_sweetcreaturesss/" rel="noopener noreferrer" target="_blank">
+                                        <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/>
+                                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+                                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                                        </svg>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a aria-label="Sweet Creatures on Facebook" href="https://www.facebook.com/sweetcreaturesph" rel="noopener noreferrer" target="_blank">
+                                        <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+                                            <path d="M13.5 19v-6h2l.3-2.2h-2.3V9.4c0-.7.2-1.1 1.2-1.1H16V6.4c-.5-.1-1.1-.1-1.8-.1-1.8 0-3 .9-3 3v1.5H9.4V13h1.8v6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                        </svg>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <a aria-label="Sweet Creatures on TikTok" href="https://www.tiktok.com/@sweet.creatures7" rel="noopener noreferrer" target="_blank">
+                                        <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+                                            <path d="M14 4v9.2a3.2 3.2 0 1 1-2.3-3.1M14 4c.4 2.1 1.9 3.6 4 3.9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                        </svg>
+                                        <span>TikTok</span>
+                                    </a>
+                                    </nav>
+                                </div>
+                            </section>
+                        </div>
                         <div class="frame map-frame glass box">
                             <iframe allowfullscreen="" class="contact-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=14.6523816,120.9605402&output=embed" title="Map to Sweet Creatures in Malabon">
                             </iframe>
@@ -256,19 +307,6 @@
                     </a>
                 </li>
                 <li>
-                    <a aria-label="Contact Us" href="contact.html">
-                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
-                            <rect height="14" rx="3" width="18" x="3" y="5">
-                            </rect>
-                            <path d="m3 6 9 7 9-7">
-                            </path>
-                        </svg>
-                        <span class="nav-label-full">
-                            Contact Us
-                        </span>
-                    </a>
-                </li>
-                <li>
                     <a aria-label="About Us" href="about.html">
                         <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
                             <circle cx="12" cy="12" r="9">
@@ -278,6 +316,19 @@
                         </svg>
                         <span class="nav-label-full">
                             About Us
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="Contact Us" href="contact.html">
+                        <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="20">
+                            <rect height="14" rx="3" width="18" x="3" y="5">
+                            </rect>
+                            <path d="m3 6 9 7 9-7">
+                            </path>
+                        </svg>
+                        <span class="nav-label-full">
+                            Contact Us
                         </span>
                     </a>
                 </li>

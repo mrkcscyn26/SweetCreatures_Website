@@ -14,6 +14,11 @@ setup(() => {
         if (current) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
     });
+    if (filename === 'contact.html') {
+        document.querySelectorAll('a[href="contact.html"]').forEach(link => {
+            link.addEventListener('click', event => event.preventDefault());
+        });
+    }
 });
 
 // Add a soft highlight or touch press to make tiles feel interactive.
@@ -42,7 +47,6 @@ function slider(element) {
     const originals = [...track.children];
     const count = originals.length;
     const controls = element.closest('.cake-deck') || element;
-    const counter = controls.querySelector('.slide-counter');
     if (count < 2) return;
     let index = 1, moving = false, paused = false, start = null;
     const pending = [];
@@ -58,8 +62,6 @@ function slider(element) {
         track.style.transform = 'translateX(-' + index * element.clientWidth + 'px)';
         const current = (index - 1 + count) % count;
         element.dataset.slide = String(current);
-        // Keep the deck counter in sync, including the copied end slides.
-        if (counter) counter.textContent = (current + 1) + ' / ' + count;
     }
     // Move instantly when switching from a copied photo to the real one.
     function jump(next) {

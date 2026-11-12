@@ -135,7 +135,7 @@ export function SiteHeader() {
         className="fixed inset-x-3 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-50 rounded-full border border-white/30 bg-forest-900/45 px-2 pb-2 pt-2 text-white shadow-[0_-12px_35px_-24px_rgb(0_0_0/0.7)] backdrop-blur-2xl sm:inset-x-auto sm:left-1/2 sm:bottom-4 sm:-translate-x-1/2 sm:px-2"
       >
         <ul className="mx-auto flex max-w-3xl items-center justify-around gap-1 sm:gap-1">
-          {[...mainNav.slice(0, -1), contactLink, mainNav[mainNav.length - 1]].map((link) => {
+          {[...mainNav, contactLink].map((link) => {
             const Icon = navigationIcons[link.label as keyof typeof navigationIcons];
             return (
               <li key={link.label} className="min-w-0 flex-1 sm:flex-none">

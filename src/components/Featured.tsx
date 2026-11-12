@@ -22,7 +22,7 @@ export function Featured() {
             <Reveal key={item.name} delay={index * 110} className="h-full">
               <article
                 onPointerMove={trackPointer}
-                className="spotlight group flex h-full flex-col rounded-[28px] border border-forest-900/10 bg-cream-100/80 p-2.5 shadow-[inset_0_1px_0_rgb(255_255_255/0.6),0_24px_48px_-34px_rgb(40_65_44/0.4)] transition-[translate,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-[inset_0_1px_0_rgb(255_255_255/0.6),0_34px_60px_-34px_rgb(40_65_44/0.5)]"
+                className="spotlight group flex h-full flex-col rounded-[28px] border border-white/60 bg-white/25 p-2.5 shadow-[inset_0_1px_0_rgb(255_255_255/0.68),0_24px_48px_-34px_rgb(40_65_44/0.4)] backdrop-blur-xl transition-[translate,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-[inset_0_1px_0_rgb(255_255_255/0.75),0_34px_60px_-34px_rgb(40_65_44/0.5)]"
               >
                 <div className="relative aspect-[5/4] overflow-hidden rounded-[22px] bg-cream-300">
                   <img

@@ -44,7 +44,7 @@ export function SiteFooter() {
                 decoding="async"
               />
             </span>
-            <span className="font-display text-2xl font-semibold tracking-[-0.03em] text-white">Sweet Creatures</span>
+            <span className="font-display text-3xl font-semibold text-cream-100">Sweet Creatures</span>
           </a>
           <p className="mt-5 text-[15px] leading-relaxed text-white/70">
             Sweet treats, iced coffee, cookies, and custom cakes for every fan and every celebration.
