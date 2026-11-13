@@ -1,50 +1,7 @@
 # Sweet Creatures
 
-The primary website is the React/Vite app at the repository root. The previous six-page HTML website is preserved in [`public/static-site/`](./public/static-site/).
+The website is a static HTML site styled with Bootstrap 5. It does not use Vite, React, Node.js, or a build step.
 
-## Run the React app
+Open `index.html` in a browser, or serve this folder with any static file server. Bootstrap and the web fonts load from CDNs, so an internet connection is needed for those styles and fonts.
 
-```sh
-npm install
-npm run dev
-```
-
-Create a production build with:
-
-```sh
-npm run build
-```
-
-## Project structure
-
-```text
-SweetCreatures_Website/
-  index.html
-  package.json
-  package-lock.json
-  tsconfig.json
-  vite.config.ts
-  src/
-    main.tsx
-    index.css
-    pages/
-      HomePage.tsx
-    assets/
-    components/
-    data/
-    utils/
-  public/
-    static-site/
-      index.html
-      about.html
-      menu.html
-      custom-cakes.html
-      gallery.html
-      contact.html
-      style.css
-      redesign.css
-      script.js
-      assets/
-```
-
-To preview the preserved HTML site while the Vite server is running, open `/static-site/` in the browser. Vite also copies this folder into the production build.
+All pages are in this folder. Images are organized under `assets/images/`. Every page shares the local `style.css` and `script.js`.
