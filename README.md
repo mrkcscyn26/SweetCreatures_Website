@@ -47,7 +47,7 @@ To give Sweet Creatures an online presence, show its menu and custom cake design
 
 ## Deployment
 - GitHub Repository: [https://github.com/mrkcscyn26/SweetCreatures_Website](https://github.com/mrkcscyn26/SweetCreatures_Website)
-- Live Site: [https://username.github.io/SweetCreatures_Website](https://.mrkcscyn26.io/SweetCreatures_Website)
+- Live Site: [https://mrkcscyn26.github.io/SweetCreatures_Website](https://mrkcscyn26.github.io/SweetCreatures_Website)
 
 ## Lessons Learned
 - Improved teamwork by using Git and GitHub
