@@ -60,4 +60,4 @@ To give Sweet Creatures an online presence, show its menu and custom cake design
 | Proposal | Planning & wireframe | September 2026 |
 | Development | Coding & testing | Oct-Nov, 2026 |
 | Deployment | GitHub setup & launch | Nov 21-23, 2026 |
-| Submission | Final documentation | Nov 23, 2026 |
+| Submission | Final documentation | Nov 25, 2026 |
