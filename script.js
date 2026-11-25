@@ -300,6 +300,67 @@ setup(() => {
     date.min = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
 });
 
+// Preview reference photos and support dropping them onto the upload area.
+setup(() => {
+    const form = document.getElementById('cakeForm');
+    const input = document.getElementById('cPhoto');
+    const well = input?.closest('.file-well');
+    const preview = document.getElementById('cPhotoPreview');
+    const previewImage = document.getElementById('cPhotoPreviewImage');
+    const photoName = document.getElementById('cPhotoName');
+    const feedback = document.getElementById('cPhotoFeedback');
+    const removeButton = document.getElementById('cPhotoRemove');
+    if (!form || !input || !well || !preview || !previewImage || !photoName || !feedback || !removeButton) return;
+
+    let previewUrl = '';
+    function clearPhoto() {
+        if (previewUrl) URL.revokeObjectURL(previewUrl);
+        previewUrl = '';
+        previewImage.removeAttribute('src');
+        photoName.textContent = '';
+        preview.hidden = true;
+        feedback.hidden = true;
+        input.value = '';
+    }
+
+    function showPhoto(file) {
+        feedback.hidden = true;
+        if (!file) {
+            clearPhoto();
+            return;
+        }
+        if (!file.type.startsWith('image/')) {
+            clearPhoto();
+            feedback.hidden = false;
+            return;
+        }
+        if (previewUrl) URL.revokeObjectURL(previewUrl);
+        previewUrl = URL.createObjectURL(file);
+        previewImage.src = previewUrl;
+        photoName.textContent = file.name;
+        preview.hidden = false;
+    }
+
+    input.addEventListener('change', () => showPhoto(input.files[0]));
+    removeButton.addEventListener('click', clearPhoto);
+    form.addEventListener('reset', clearPhoto);
+    well.addEventListener('dragover', event => {
+        event.preventDefault();
+        well.classList.add('is-dragover');
+    });
+    well.addEventListener('dragleave', () => well.classList.remove('is-dragover'));
+    well.addEventListener('drop', event => {
+        event.preventDefault();
+        well.classList.remove('is-dragover');
+        const file = event.dataTransfer.files[0];
+        if (!file) return;
+        const transfer = new DataTransfer();
+        transfer.items.add(file);
+        input.files = transfer.files;
+        showPhoto(file);
+    });
+});
+
 // Share form checks so both forms show errors and success messages consistently.
 function formValidation(formId, messageId, rules, clearErrors) {
     const form = document.getElementById(formId);

@@ -383,6 +383,14 @@
                                             </p>
                                             <input accept="image/*" id="cPhoto" name="photo" type="file"/>
                                         </div>
+                                        <div class="file-preview" id="cPhotoPreview" hidden>
+                                            <img alt="Selected reference photo preview" id="cPhotoPreviewImage"/>
+                                            <div class="file-preview-details">
+                                                <span id="cPhotoName"></span>
+                                                <button class="file-remove" id="cPhotoRemove" type="button">Remove photo</button>
+                                            </div>
+                                        </div>
+                                        <p class="file-feedback" id="cPhotoFeedback" role="alert" hidden>Please choose an image file.</p>
                                     </div>
                                     <div class="field field-full">
                                         <label for="cNotes">

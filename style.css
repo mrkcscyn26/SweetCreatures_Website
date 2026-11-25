@@ -1244,6 +1244,7 @@ input::placeholder, textarea::placeholder {
     padding: 18px;
     border: 1px dashed var(--accent-text);
     border-radius: var(--radius-sm);
+    transition: background .2s, border-color .2s;
 }
 
 /* Make the whole upload area open the file picker. */
@@ -1254,10 +1255,66 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
 }
 
+/* Highlight the upload area while a photo is dragged over it. */
+.file-well.is-dragover {
+    background: var(--accent-wash);
+    border-color: var(--primary);
+}
+
 /* Center the photo upload instructions. */
 .file-prompt {
     text-align: center;
     font-size: 15px;
+}
+
+/* Show the selected reference photo and its remove control. */
+.file-preview {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+    padding: 10px;
+    background: var(--field-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+}
+
+.file-preview[hidden], .file-feedback[hidden] {
+    display: none;
+}
+
+.file-preview img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.file-preview-details {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+}
+
+.file-preview-details span {
+    overflow-wrap: anywhere;
+}
+
+.file-remove {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+}
+
+.file-feedback {
+    color: var(--text-fg);
+    font-size: 14px;
+    font-weight: 800;
 }
 
 /* Keep form buttons at the start of the row. */
